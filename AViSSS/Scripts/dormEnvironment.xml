@@ -84,12 +84,12 @@
   
     
     <skybox>
-        <file>hexagon_right.tif</file>
-        <file>hexagon_left.tif</file>
-        <file>hexagon_top.tif</file>
-        <file>hexagon_bot.tif</file>
-        <file>hexagon_front.tif</file>
-        <file>hexagon_back.tif</file>
+        <file>park25_RT.jpg</file>
+        <file>park25_LF.jpg</file>
+        <file>park25_UP.jpg</file>
+        <file>park25_DN.jpg</file>
+        <file>park25_FR.jpg</file>
+        <file>park25_BK.jpg</file>
     </skybox>
     
 </environment>

@@ -178,4 +178,87 @@
             
         </gui>
     </state>
+    <state id="2">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>30</x>
+                        <y>0</y>
+                        <z>-30</z>
+                        <duration>6</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                </actionSequence>
+                <actionSequence desc="bobble head">
+                    <position>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <position>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <count>12</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>Your roommate is playing music, which is disturbing you. How should you respond?</situation_text>
+            <next_state>0</next_state>
+            <correct_choice>1</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>12</description_delay>
+            <options_delay>12</options_delay>
+            
+            <menu_option id="0">
+                <text>I'll turn the music off without his permission.</text>
+                <text_on_select>No, it's your roommates stereo and you shouldn't touch it.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>Talk to your roommate about creating a schedule that will allow for both quiet time and time when music and television is allowed.</text>
+                <text_on_select>Yes, this is a good solution. When living with somebody else, sometimes you must both make compromises in order to create a good living environment.</text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Don't say anything even though you feel that you never get your quiet time.</text>
+                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>To retaliate you start playing your own music loudly.</text>
+                <text_on_select>No, this is not a good solution and will only cause conflict between the two of you.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+        </gui>
+    </state>
 </scenario>
