@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Jeff Wirsing AViSSS XML -->
+
+<scenario>
+    <environment>libraryEnvironment</environment>
+    <state id="0">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="Set Height move forward">
+                    <position>
+                        <x>0</x>
+                        <y>8</y>
+                        <z>60</z>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </position>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>-60</z>
+                        <duration>8</duration>
+                        <count>1</count>
+                    </position>
+                </actionSequence>
+                <actionSequence desc="bobble head">
+                    <position>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <position>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <count>8</count>
+                </actionSequence>
+            </target>
+            <target name="boy1">
+                <actionSequence desc="Pos">
+                    <delay>2</delay>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>25</z>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </position>
+                </actionSequence>
+                <actionSequence desc="talk">
+                    <animation>
+                        <file>boy1_Talk</file>
+                        <count>100</count>
+                    </animation>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>You see your roommate as you enter your dorm. What should you do?</situation_text>
+            <next_state>1</next_state>
+            <correct_choice>3</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>8</description_delay>
+            <options_delay>8</options_delay>
+            
+            <menu_option id="0">
+                <text>Scowl at him</text>
+                <text_on_select>No, you should never just scowl at your roommate.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>Tell him to leave, you want time to yourself.</text>
+                <text_on_select>No, your roommate has the same right to be here as you do. </text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Ignore him and keep going on my way</text>
+                <text_on_select>No, you should acknowledge your roomate when you see him or her.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Tell him "hi!"</text>
+                <text_on_select>Good job! You should attempt to be friendly to your roomate. </text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+        </gui>
+    </state>
+    <state id="1">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>30</x>
+                        <y>0</y>
+                        <z>-30</z>
+                        <duration>6</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                </actionSequence>
+                <actionSequence desc="bobble head">
+                    <position>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <position>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <count>12</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>You notice that your roommate left a mess on your side of the dorm. How should you respond?</situation_text>
+            <next_state>0</next_state>
+            <correct_choice>2</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>12</description_delay>
+            <options_delay>12</options_delay>
+            
+            <menu_option id="0">
+                <text>I'll move the mess to his side.</text>
+                <text_on_select>No, you shouldn't touch your roommates property unless you have permission.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>Scream and yell</text>
+                <text_on_select>This is not a good idea. This will create a hostile environment.</text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Politely ask your roommate to move the mess.</text>
+                <text_on_select>Yes, this is a good idea. You should politely contront your roommate if there is a problem.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Ignore the problem.</text>
+                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+        </gui>
+    </state>
+    <state id="2">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>30</x>
+                        <y>0</y>
+                        <z>-30</z>
+                        <duration>6</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                </actionSequence>
+                <actionSequence desc="bobble head">
+                    <position>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <position>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <count>12</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>Your roommate is playing music, which is disturbing you. How should you respond?</situation_text>
+            <next_state>0</next_state>
+            <correct_choice>1</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>12</description_delay>
+            <options_delay>12</options_delay>
+            
+            <menu_option id="0">
+                <text>I'll turn the music off without his permission.</text>
+                <text_on_select>No, it's your roommates stereo and you shouldn't touch it.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>Talk to your roommate about creating a schedule that will allow for both quiet time and time when music and television is allowed.</text>
+                <text_on_select>Yes, this is a good solution. When living with somebody else, sometimes you must both make compromises in order to create a good living environment.</text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Don't say anything even though you feel that you never get your quiet time.</text>
+                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>To retaliate you start playing your own music loudly.</text>
+                <text_on_select>No, this is not a good solution and will only cause conflict between the two of you.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+        </gui>
+    </state>
+    <state id="3">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>30</x>
+                        <y>0</y>
+                        <z>-30</z>
+                        <duration>6</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                </actionSequence>
+                <actionSequence desc="bobble head">
+                    <position>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <position>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <count>12</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>Your roommate has decided to have his girlfriend over again, which is the third time this week. The dorm is small and it feels crowded and uncomfortable when she's over', so what should you do?</situation_text>
+            <next_state>0</next_state>
+            <correct_choice>1</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>12</description_delay>
+            <options_delay>12</options_delay>
+            
+            <menu_option id="0">
+                <text>I'll ask her to leave when she arrives.</text>
+                <text_on_select>No, this is very rude and will just cause a conflict between you and your roommate.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>Don't say anything even though you feel that you never relax in your own room.</text>
+                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Leave the room.</text>
+                <text_on_select>If this keeps happening this is not the best solution. You should be able to spend time in your own room.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Talk to your roommate about creating a schedule of when each of you is allowed to have visitors.</text>
+                <text_on_select>Yes, this is a good solution. When living with somebody else, sometimes you must both make compromises in order to create a good living environment. You may want to allow flexibilty in case something comes up, but just once in a while.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+        </gui>
+    </state>
+</scenario>
