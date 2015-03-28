@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Jeff Wirsing AViSSS XML -->
 <!--Hallway Environment -->
-<environment name="library">
+<environment name="cafeteria">
     
     <node name="boy2" type="dae">
         <file>boy2_Character</file>
@@ -62,9 +62,9 @@
         </scale>
     </node>
     
-    <node name="library" type="dae">
-        <file>library</file>
-        <objectName>libraryScene</objectName>
+    <node name="cafeteria" type="dae">
+        <file>cafeteria</file>
+        <objectName>cafeteriaScene</objectName>
         <position>
             <x>1</x>
             <y>7.3</y>

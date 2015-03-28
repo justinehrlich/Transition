@@ -2,7 +2,7 @@
 <!--Jeff Wirsing AViSSS XML -->
 
 <scenario>
-    <environment>libraryEnvironment</environment>
+    <environment>cafeteriaEnvironment</environment>
     <state id="0">
         <actions>
             <target name="camera">

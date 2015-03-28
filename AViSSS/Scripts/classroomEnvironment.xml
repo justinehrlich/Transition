@@ -62,9 +62,9 @@
         </scale>
     </node>
     
-    <node name="library" type="dae">
-        <file>library</file>
-        <objectName>libraryScene</objectName>
+    <node name="classroom" type="dae">
+        <file>classroom</file>
+        <objectName>classroomScene</objectName>
         <position>
             <x>1</x>
             <y>7.3</y>
