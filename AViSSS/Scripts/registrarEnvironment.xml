@@ -62,12 +62,12 @@
         </scale>
     </node>
     
-    <node name="library" type="dae">
-        <file>library</file>
-        <objectName>libraryScene</objectName>
+    <node name="registrar" type="dae">
+        <file>registrar</file>
+        <objectName>registrarScene</objectName>
         <position>
             <x>1</x>
-            <y>7.3</y>
+            <y>6.5</y>
             <z>40</z>
         </position>
         <rotation>
@@ -76,9 +76,9 @@
             <z>0</z>
         </rotation>
         <scale>
-            <x>6</x>
-            <y>6</y>
-            <z>6</z>
+            <x>5</x>
+            <y>5</y>
+            <z>5</z>
         </scale>
     </node>
   
