@@ -8,36 +8,61 @@
             <target name="camera">
                 <actionSequence desc="Set Height move forward">
                     <position>
-                        <x>0</x>
+                        <x>-95</x>
                         <y>8</y>
-                        <z>60</z>
+                        <z>0</z>
                         <duration>0</duration>
                         <count>1</count>
                     </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </rotation>
+                    <delay>10</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
                     <position>
                         <x>0</x>
                         <y>0</y>
-                        <z>-60</z>
+                        <z>80</z>
                         <duration>8</duration>
                         <count>1</count>
                     </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-90</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
                 </actionSequence>
                 <actionSequence desc="bobble head">
                     <position>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>1</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>1</duration>
                         <count>1</count>
                     </position>
-                    <count>8</count>
+                    <count>18</count>
                 </actionSequence>
             </target>
             <target name="boy1">
@@ -123,6 +148,7 @@
                         <count>1</count>
                     </rotation>
                 </actionSequence>
+                
                 <actionSequence desc="bobble head">
                     <position>
                         <x>0</x>
@@ -145,33 +171,33 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>You notice that your roommate left a mess on your side of the dorm. How should you respond?</situation_text>
+            <situation_text>As you're trying to study, somebody close to you starts talking on her cell phone. What should you do?'</situation_text>
             <next_state>0</next_state>
-            <correct_choice>2</correct_choice>
+            <correct_choice>3</correct_choice>
             <option_type>text</option_type>
             <description_delay>12</description_delay>
             <options_delay>12</options_delay>
             
             <menu_option id="0">
-                <text>I'll move the mess to his side.</text>
-                <text_on_select>No, you shouldn't touch your roommates property unless you have permission.</text_on_select>
+                <text>I'll ask the person to hang up her phone.</text>
+                <text_on_select>No, even if phones are not allowed, this is rude and will cause a conflict.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Scream and yell</text>
-                <text_on_select>This is not a good idea. This will create a hostile environment.</text_on_select>
+                <text>Ignore the issue even it prevents you from studying.</text>
+                <text_on_select>This is not a good idea as you may not get your homework finished.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Politely ask your roommate to move the mess.</text>
-                <text_on_select>Yes, this is a good idea. You should politely contront your roommate if there is a problem.</text_on_select>
+                <text>Ask a librarian to intercede.</text>
+                <text_on_select>While this might be a good idea if there is a policy in the library against cell phones, a lot of libraries do not actually have rules against cell phones.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Ignore the problem.</text>
-                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <text>Move to a different area.</text>
+                <text_on_select>This is probably the best solution, as it's quick and won't cause conflict.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
