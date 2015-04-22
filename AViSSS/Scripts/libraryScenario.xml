@@ -118,25 +118,47 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>30</angle>
+                        <angle>90</angle>
                         <duration>3</duration>
                         <count>1</count>
                     </rotation>
                     <position>
-                        <x>30</x>
+                        <x>0</x>
                         <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
+                        <z>60</z>
+                        <duration>4</duration>
                         <count>1</count>
                     </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
+                        <angle>-90</angle>
                         <duration>3</duration>
                         <count>1</count>
                     </rotation>
+                    <position>
+                        <x>20</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>2</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-90</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>0</x>
+                        <y>-5</y>
+                        <z>0</z>
+                        <duration>2</duration>
+                        <count>1</count>
+                    </position>
                 </actionSequence>
                 
                 <actionSequence desc="bobble head">
@@ -144,17 +166,17 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>12</count>
+                    <count>15</count>
                 </actionSequence>
             </target>
         </actions>
