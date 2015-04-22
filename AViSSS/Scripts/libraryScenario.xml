@@ -62,20 +62,10 @@
                         <duration>1</duration>
                         <count>1</count>
                     </position>
-                    <count>18</count>
+                    <count>7</count>
                 </actionSequence>
             </target>
             <target name="boy1">
-                <actionSequence desc="Pos">
-                    <delay>2</delay>
-                    <position>
-                        <x>0</x>
-                        <y>0</y>
-                        <z>25</z>
-                        <duration>0</duration>
-                        <count>1</count>
-                    </position>
-                </actionSequence>
                 <actionSequence desc="talk">
                     <animation>
                         <file>boy1_Talk</file>
