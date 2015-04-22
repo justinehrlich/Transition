@@ -82,7 +82,7 @@ class ScriptManager {
     //or they may be instructions for playing a sound and displaying text.
     //Function then passes actions to the scenarioManager
     func parseActions(actions: GDataXMLElement){
-        //Go through targets, building up a sequence of actions 
+        //Go through targets, building up a sequence of actions
         //(some actions can be simultaneously embedded in sequence as a 'batch') for each
         //May be camera or node
         
@@ -251,7 +251,7 @@ class ScriptManager {
             geometry.firstMaterial?.diffuse.contents = textureName
             
             geometry.firstMaterial?.diffuse.wrapS = SCNWrapMode.Repeat
-            geometry.firstMaterial?.diffuse.wrapT = SCNWrapMode.ClampToBorder
+            geometry.firstMaterial?.diffuse.wrapT = SCNWrapMode.Clamp
             geometry.firstMaterial?.doubleSided = true
             geometry.firstMaterial?.locksAmbientWithDiffuse = true
             
@@ -327,7 +327,7 @@ class ScriptManager {
         _GUIManager?.setGUIBundle(guiBundle)
     }
     
-        
+    
     
     ////Utility Method
     func degToRad(deg: Float)->Float{
