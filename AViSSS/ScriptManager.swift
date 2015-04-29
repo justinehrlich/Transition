@@ -10,9 +10,13 @@
 import UIKit
 import QuartzCore
 import SceneKit
+import SpriteKit
+import AVFoundation
+
 //import Foundation
 
 class ScriptManager {
+    var audioPlayer = AVAudioPlayer()
     var states : [GDataXMLElement] = [GDataXMLElement]()
     var scenarioManager : ScenarioManager
     var _GUIManager : GUIManager?
@@ -143,6 +147,36 @@ class ScriptManager {
                 let duration =  ((action.elementsForName("duration").first as! GDataXMLElement).stringValue() as NSString).doubleValue
                 buildAction = SCNAction.rotateByAngle(CGFloat(degToRad(angle)), aroundAxis: SCNVector3Make(x, y,z), duration: NSTimeInterval(duration))
                 // scnAction = SCNAction.rotateByAngle(CGFloat(degToRad(90)), aroundAxis: SCNVector3Make(0, 1, 0), duration: NSTimeInterval(3))
+            case "sound":
+                //NSURL(fileURLWithPath: soundPath as! String)
+                buildAction = SCNAction.runBlock{
+                    (node: SCNNode!) in
+    
+                    var backgroundMusicPlayer: AVAudioPlayer!
+                    var filename = (action.stringValue() as NSString)
+                    let url = NSBundle.mainBundle().URLForResource(
+                        filename as! String, withExtension: nil)
+                    if (url == nil) {
+                        println("Could not find file: \(filename)")
+                        return
+                    }
+                    
+                    var error: NSError? = nil
+                    backgroundMusicPlayer =
+                        AVAudioPlayer(contentsOfURL: url, error: &error)
+                    if backgroundMusicPlayer == nil {
+                        println("Could not create audio player: \(error!)")
+                        return
+                    }
+                    
+                    backgroundMusicPlayer.numberOfLoops = -1
+                    backgroundMusicPlayer.prepareToPlay()
+                    backgroundMusicPlayer.play()
+                }
+                
+                
+                
+            
             case "delay":
                 NSLog("Creating Delay action")
                 let duration =  (action.stringValue() as NSString).floatValue

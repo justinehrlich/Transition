@@ -125,7 +125,7 @@
                     <position>
                         <x>0</x>
                         <y>0</y>
-                        <z>60</z>
+                        <z>55</z>
                         <duration>4</duration>
                         <count>1</count>
                     </position>
@@ -159,6 +159,7 @@
                         <duration>2</duration>
                         <count>1</count>
                     </position>
+                    <sound>cellPhone.mp3</sound>
                 </actionSequence>
                 
                 <actionSequence desc="bobble head">
@@ -183,15 +184,15 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>As you're trying to study, somebody close to you starts talking on her cell phone. What should you do?'</situation_text>
-            <next_state>0</next_state>
+            <situation_text>As you're trying to study, somebody close to you starts talking on his cell phone. What should you do?'</situation_text>
+            <next_state>2</next_state>
             <correct_choice>3</correct_choice>
             <option_type>text</option_type>
             <description_delay>12</description_delay>
             <options_delay>12</options_delay>
             
             <menu_option id="0">
-                <text>I'll ask the person to hang up her phone.</text>
+                <text>I'll ask the person to hang up the phone.</text>
                 <text_on_select>No, even if phones are not allowed, this is rude and will cause a conflict.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
@@ -225,13 +226,13 @@
                         <y>1</y>
                         <z>0</z>
                         <angle>90</angle>
-                        <duration>3</duration>
+                        <duration>1</duration>
                         <count>1</count>
                     </rotation>
                     <position>
-                        <x>30</x>
+                        <x>40</x>
                         <y>0</y>
-                        <z>-30</z>
+                        <z>0</z>
                         <duration>6</duration>
                         <count>1</count>
                     </position>
@@ -239,60 +240,77 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
+                        <angle>-90</angle>
                         <duration>3</duration>
                         <count>1</count>
                     </rotation>
+                </actionSequence>
+                <actionSequence desc="smooth up and down">
+                    <position>
+                        <x>0</x>
+                        <y>5</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <delay>6</delay>
+                    <position>
+                        <x>0</x>
+                        <y>-5</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
                 </actionSequence>
                 <actionSequence desc="bobble head">
                     <position>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>12</count>
+                    <count>7</count>
                 </actionSequence>
             </target>
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>Your roommate is playing music, which is disturbing you. How should you respond?</situation_text>
-            <next_state>0</next_state>
-            <correct_choice>1</correct_choice>
+            <situation_text>When you sit down to study, you start feeling overwhelmed with all of the work you need to do, and don't know where to start.</situation_text>
+            <next_state>3</next_state>
+            <correct_choice>3</correct_choice>
             <option_type>text</option_type>
             <description_delay>12</description_delay>
             <options_delay>12</options_delay>
             
             <menu_option id="0">
-                <text>I'll turn the music off without his permission.</text>
-                <text_on_select>No, it's your roommates stereo and you shouldn't touch it.</text_on_select>
+                <text>I'll walk around the library until I can decide what to do.</text>
+                <text_on_select>No, a plan needs to be made now, don't get distracted by walking around.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Talk to your roommate about creating a schedule that will allow for both quiet time and time when music and television is allowed.</text>
-                <text_on_select>Yes, this is a good solution. When living with somebody else, sometimes you must both make compromises in order to create a good living environment.</text_on_select>
+                <text>Ask the librarian what to do.</text>
+                <text_on_select>While the librarian can help you find material once you start your homework, you should be able to create a plan on your own.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Don't say anything even though you feel that you never get your quiet time.</text>
-                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <text>Leave the library and go back to your dorm.</text>
+                <text_on_select>This is not the best solution. You need to study for your classes.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>To retaliate you start playing your own music loudly.</text>
-                <text_on_select>No, this is not a good solution and will only cause conflict between the two of you.</text_on_select>
+                <text>Create a plan with a list of all of your assignments.</text>
+                <text_on_select>Yes, this is a great idea. It always helps to get organized and will give you directions of what to do next. It may help to create a flowchart with your assignments that are due next listed first. Another idea is to use a timer to keep track of when you should finish studying.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -349,7 +367,90 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>Your roommate has decided to have his girlfriend over again, which is the third time this week. The dorm is small and it feels crowded and uncomfortable when she's over', so what should you do?</situation_text>
+            <situation_text>One of your homework assignments requires you to research and summarize an academic paper. What should you do?</situation_text>
+            <next_state>0</next_state>
+            <correct_choice>3</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>12</description_delay>
+            <options_delay>12</options_delay>
+            
+            <menu_option id="0">
+                <text>Make up the report without finding any information on the topic.</text>
+                <text_on_select>No, this is a bad idea. Not only will you not be learning about the topic, but you'll likely receive a poor grade for not completing the assignment correctly.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>Try and find a classmate to help you with the assignment.</text>
+                <text_on_select>You have to be very careful when working with a friend for assignments that are to be completed individually. While you may certainly discuss strategies for completing the assignment, the actual work must be done independently. </text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Search for the topic on a computer in the library even though you're not sure how to.</text>
+                <text_on_select>Unless you've had experience with searching for academic papers, you should ask the librarian for help because it requires special access and tools.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Ask the librarian for help.</text>
+                <text_on_select>Yes, this is a good solution. Typically university libraries subscribe to paid academic databases that need to be logged into to use. The librarian can show you how to access and use these databases.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+        </gui>
+    </state>
+    <state id="4">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>30</x>
+                        <y>0</y>
+                        <z>-30</z>
+                        <duration>6</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                </actionSequence>
+                <actionSequence desc="bobble head">
+                    <position>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <position>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <count>12</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>Part of your assignment asks you to locate a book on the shelf. When you try to find it you discover that it is not where it should be. What do you do?</situation_text>
             <next_state>0</next_state>
             <correct_choice>1</correct_choice>
             <option_type>text</option_type>
@@ -357,25 +458,109 @@
             <options_delay>12</options_delay>
             
             <menu_option id="0">
-                <text>I'll ask her to leave when she arrives.</text>
-                <text_on_select>No, this is very rude and will just cause a conflict between you and your roommate.</text_on_select>
+                <text>Skip this part of the assignment.</text>
+                <text_on_select>No, this is a bad idea. Not only will you receive a lower grade, but you will not be learning what was intended.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Don't say anything even though you feel that you never relax in your own room.</text>
-                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <text>Ask the librarian for help.</text>
+                <text_on_select>Yes, this is a good solution. It could very well be located behind the front desk if the book was checked out or put on reserve.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Try and find a classmate to help you with the assignment.</text>
+                <text_on_select>You have to be very careful when working with a friend for assignments that are to be completed individually. While you may certainly discuss strategies for completing the assignment, the actual work must be done independently. </text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Just take a book in the same area.</text>
+                <text_on_select>No, while it may be similar it probably won't contain the needed information. Besides, you need to follow the instructions precisely in order to fulfill the goal of the assignment.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+
+            
+        </gui>
+    </state>
+    <state id="5">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>30</x>
+                        <y>0</y>
+                        <z>-30</z>
+                        <duration>6</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-30</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
+                </actionSequence>
+                <actionSequence desc="bobble head">
+                    <position>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <position>
+                        <x>0</x>
+                        <y>-1</y>
+                        <z>0</z>
+                        <duration>0.4</duration>
+                        <count>1</count>
+                    </position>
+                    <count>12</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>The librarian finds that the book has been placed on reserve. This means that it's only available to use within the library. The problem is you forgot your ID, so she won't let your borrow it. What should you do?</situation_text>
+            <next_state>0</next_state>
+            <correct_choice>3</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>12</description_delay>
+            <options_delay>12</options_delay>
+            
+            <menu_option id="0">
+                <text>Make up the report without finding any information on the topic.</text>
+                <text_on_select>No, this is a bad idea. Not only will you not be learning about the topic, but you'll likely receive a poor grade for not completing the assignment correctly.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>Try and find a classmate to help you with the assignment.</text>
+                <text_on_select>You have to be very careful when working with a friend for assignments that are to be completed individually. While you may certainly discuss strategies for completing the assignment, the actual work must be done independently. </text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Leave the room.</text>
-                <text_on_select>If this keeps happening this is not the best solution. You should be able to spend time in your own room.</text_on_select>
+                <text>Argue with the librarian.</text>
+                <text_on_select>No, this is not a good idea. This policy is of the University and it's important that it be followed.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Talk to your roommate about creating a schedule of when each of you is allowed to have visitors.</text>
-                <text_on_select>Yes, this is a good solution. When living with somebody else, sometimes you must both make compromises in order to create a good living environment. You may want to allow flexibilty in case something comes up, but just once in a while.</text_on_select>
+                <text>Go home and get your ID.</text>
+                <text_on_select>Yes, this is a good solution. While it's annoying that the librarian won't let you see the book without an ID, they must keep track of where the book is located so that way the rest of the class has time to read it.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>

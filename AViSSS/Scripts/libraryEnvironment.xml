@@ -46,9 +46,9 @@
         <file>boy3_Character</file>
         <objectName>CBoy0003</objectName>
         <position>
-            <x>0</x>
-            <y>0</y>
-            <z>-15</z>
+            <x>-70</x>
+            <y>00</y>
+            <z>122</z>
         </position>
         <rotation>
             <x>-90</x>

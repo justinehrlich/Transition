@@ -76,6 +76,7 @@
 		C83CC65A1AC6220D00CD5C77 /* registrarScenario.xml in Resources */ = {isa = PBXBuildFile; fileRef = C83CC6541AC6220D00CD5C77 /* registrarScenario.xml */; };
 		C83CC65E1AC6230700CD5C77 /* classroom.dae in Resources */ = {isa = PBXBuildFile; fileRef = C83CC65D1AC6230700CD5C77 /* classroom.dae */; };
 		C83CC6621AC623EF00CD5C77 /* registrar.dae in Resources */ = {isa = PBXBuildFile; fileRef = C83CC6611AC623EF00CD5C77 /* registrar.dae */; };
+		C83FBFC01AF0963C00AC81A0 /* cellPhone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C83FBFBF1AF0963C00AC81A0 /* cellPhone.mp3 */; };
 		C895BF521AB2922C00AECAC2 /* park25_BK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C895BF4C1AB2922C00AECAC2 /* park25_BK.jpg */; };
 		C895BF531AB2922C00AECAC2 /* park25_DN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C895BF4D1AB2922C00AECAC2 /* park25_DN.jpg */; };
 		C895BF541AB2922C00AECAC2 /* park25_FR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C895BF4E1AB2922C00AECAC2 /* park25_FR.jpg */; };
@@ -173,6 +174,7 @@
 		C83CC6541AC6220D00CD5C77 /* registrarScenario.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = registrarScenario.xml; sourceTree = "<group>"; };
 		C83CC65D1AC6230700CD5C77 /* classroom.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = classroom.dae; sourceTree = "<group>"; };
 		C83CC6611AC623EF00CD5C77 /* registrar.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = registrar.dae; sourceTree = "<group>"; };
+		C83FBFBF1AF0963C00AC81A0 /* cellPhone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cellPhone.mp3; sourceTree = "<group>"; };
 		C895BF4C1AB2922C00AECAC2 /* park25_BK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_BK.jpg; sourceTree = "<group>"; };
 		C895BF4D1AB2922C00AECAC2 /* park25_DN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_DN.jpg; sourceTree = "<group>"; };
 		C895BF4E1AB2922C00AECAC2 /* park25_FR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_FR.jpg; sourceTree = "<group>"; };
@@ -318,6 +320,7 @@
 		1F869F561A16EEB0004E9369 /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				C83FBFBF1AF0963C00AC81A0 /* cellPhone.mp3 */,
 				1F869F571A16EEB0004E9369 /* 1-1a-1.mp3 */,
 				1F869F581A16EEB0004E9369 /* 1-1a-2.mp3 */,
 				1F869F591A16EEB0004E9369 /* 1-1a-3.mp3 */,
@@ -550,6 +553,7 @@
 				C83CC6581AC6220D00CD5C77 /* classroomScenario.xml in Resources */,
 				1F86E7BB1977270A005ED0DD /* Images.xcassets in Resources */,
 				C8D137A91A9D7BB500A13410 /* dormEnvironment.xml in Resources */,
+				C83FBFC01AF0963C00AC81A0 /* cellPhone.mp3 in Resources */,
 				1F78E51A19E0D50C007CE18A /* CBoy0003.tif in Resources */,
 				C83CC6561AC6220D00CD5C77 /* cafeteriaScenario.xml in Resources */,
 				C83CC6591AC6220D00CD5C77 /* registrarEnvironment.xml in Resources */,
