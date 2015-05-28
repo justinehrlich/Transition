@@ -4,11 +4,11 @@
 <environment name="library">
     
     <node name="boy2" type="dae">
-        <file>boy2_Character</file>
+        <file>boy2_Model</file>
         <objectName>CBoy0002</objectName>
         <position>
             <x>-83</x>
-            <y>00</y>
+            <y>01</y>
             <z>95</z>
         </position>
         <rotation>
@@ -23,7 +23,7 @@
         </scale>
     </node>
     <node name="boy1" type="dae">
-        <file>boy1_Character</file>
+        <file>boy1_Model</file>
         <objectName>CBoy0001</objectName>
         <position>
             <x>-70</x>
@@ -43,7 +43,7 @@
     </node>
     
     <node name="boy3" type="dae">
-        <file>boy3_Character</file>
+        <file>boy3_Model</file>
         <objectName>CBoy0003</objectName>
         <position>
             <x>-70</x>
@@ -53,6 +53,26 @@
         <rotation>
             <x>-90</x>
             <y>180</y>
+            <z>0</z>
+        </rotation>
+        <scale>
+            <x>13</x>
+            <y>13</y>
+            <z>13</z>
+        </scale>
+    </node>
+    
+    <node name="woman17" type="dae">
+        <file>woman17_Model</file>
+        <objectName>CWom0017</objectName>
+        <position>
+            <x>-60</x>
+            <y>0</y>
+            <z>-65</z>
+        </position>
+        <rotation>
+            <x>-90</x>
+            <y>270</y>
             <z>0</z>
         </rotation>
         <scale>

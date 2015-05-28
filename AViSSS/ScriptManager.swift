@@ -188,13 +188,15 @@ class ScriptManager {
                 var sceneAnimationSourceName = (action.elementsForName("file").first as! GDataXMLElement).stringValue() as NSString
                 var sceneAnimationURL = NSBundle.mainBundle().URLForResource(sceneAnimationSourceName as! String, withExtension: "dae")
                 var sceneAnimationSource = SCNSceneSource(URL: sceneAnimationURL!, options: nil)
-                let animationName = "\(sceneAnimationSourceName)-1"
-                var animation = sceneAnimationSource?.entryWithIdentifier(animationName, withClass: CAAnimation.self) as! CAAnimation
+                let animationName = (action.elementsForName("name").first as! GDataXMLElement).stringValue() as NSString
+
+               // let animationName = "\(sceneAnimationSourceName)-1"
+                var animation = sceneAnimationSource?.entryWithIdentifier(animationName as! String, withClass: CAAnimation.self) as! CAAnimation
                 let count = ((action.elementsForName("count").first as! GDataXMLElement).stringValue() as NSString).floatValue
                 animation.repeatCount = count
                 buildAction = SCNAction.runBlock{
                     (node: SCNNode!) in
-                    node.addAnimation(animation, forKey: animationName)
+                    node.addAnimation(animation, forKey: animationName as! String)
                 }
             case "morpher":
                 //scenarioManager.scene.rootNode.childNodeWithName(name, recursively: true)?.morpher?.targets

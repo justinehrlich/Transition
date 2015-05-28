@@ -66,9 +66,37 @@
                 </actionSequence>
             </target>
             <target name="boy1">
-                <actionSequence desc="talk">
+                <actionSequence desc="sitIdle1">
                     <animation>
-                        <file>boy1_Talk</file>
+                        <file>boy1_Animations</file>
+                        <name>sitIdle1</name>
+                        <count>100</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy2">
+                <actionSequence desc="sitIdle1">
+                    <animation>
+                        <file>boy2_Animations</file>
+                        <name>sitIdle1</name>
+                        <count>100</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy3">
+                <actionSequence desc="sitIdle">
+                    <animation>
+                        <file>boy3_Animations</file>
+                        <name>sitIdle</name>
+                        <count>100</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="woman17">
+                <actionSequence desc="idleLoop">
+                    <animation>
+                        <file>woman17_Animations</file>
+                        <name>idleLoop</name>
                         <count>100</count>
                     </animation>
                 </actionSequence>

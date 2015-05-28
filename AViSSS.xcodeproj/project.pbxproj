@@ -23,9 +23,6 @@
 		1F78E51F19E0D50C007CE18A /* CGirl0003.tif in Resources */ = {isa = PBXBuildFile; fileRef = 1F78E4DE19E0D50C007CE18A /* CGirl0003.tif */; };
 		1F78E52019E0D50C007CE18A /* CWom0016.tif in Resources */ = {isa = PBXBuildFile; fileRef = 1F78E4DF19E0D50C007CE18A /* CWom0016.tif */; };
 		1F78E52119E0D50C007CE18A /* CWom0017.tif in Resources */ = {isa = PBXBuildFile; fileRef = 1F78E4E019E0D50C007CE18A /* CWom0017.tif */; };
-		1F78E53819E0D50C007CE18A /* boy1_Character.dae in Resources */ = {isa = PBXBuildFile; fileRef = 1F78E4FA19E0D50C007CE18A /* boy1_Character.dae */; };
-		1F78E53919E0D50C007CE18A /* boy1_Talk.dae in Resources */ = {isa = PBXBuildFile; fileRef = 1F78E4FB19E0D50C007CE18A /* boy1_Talk.dae */; };
-		1F78E53A19E0D50C007CE18A /* boy1_Talk.dae-e in Resources */ = {isa = PBXBuildFile; fileRef = 1F78E4FC19E0D50C007CE18A /* boy1_Talk.dae-e */; };
 		1F78E53B19E0D50C007CE18A /* boy2_Character.dae in Resources */ = {isa = PBXBuildFile; fileRef = 1F78E4FE19E0D50C007CE18A /* boy2_Character.dae */; };
 		1F78E53C19E0D50C007CE18A /* boy2_Grab.dae in Resources */ = {isa = PBXBuildFile; fileRef = 1F78E4FF19E0D50C007CE18A /* boy2_Grab.dae */; };
 		1F78E53D19E0D50C007CE18A /* boy2_Grab.dae-e in Resources */ = {isa = PBXBuildFile; fileRef = 1F78E50019E0D50C007CE18A /* boy2_Grab.dae-e */; };
@@ -77,6 +74,26 @@
 		C83CC65E1AC6230700CD5C77 /* classroom.dae in Resources */ = {isa = PBXBuildFile; fileRef = C83CC65D1AC6230700CD5C77 /* classroom.dae */; };
 		C83CC6621AC623EF00CD5C77 /* registrar.dae in Resources */ = {isa = PBXBuildFile; fileRef = C83CC6611AC623EF00CD5C77 /* registrar.dae */; };
 		C83FBFC01AF0963C00AC81A0 /* cellPhone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C83FBFBF1AF0963C00AC81A0 /* cellPhone.mp3 */; };
+		C85238921B16B3FA00C90165 /* boy1_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238881B16B3FA00C90165 /* boy1_Animations.dae */; };
+		C85238931B16B3FA00C90165 /* boy2_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238891B16B3FA00C90165 /* boy2_Animations.dae */; };
+		C85238941B16B3FA00C90165 /* boy3_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852388A1B16B3FA00C90165 /* boy3_Animations.dae */; };
+		C85238951B16B3FA00C90165 /* boy4_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852388B1B16B3FA00C90165 /* boy4_Animations.dae */; };
+		C85238961B16B3FA00C90165 /* boy5_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852388C1B16B3FA00C90165 /* boy5_Animations.dae */; };
+		C85238971B16B3FA00C90165 /* girl1_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852388D1B16B3FA00C90165 /* girl1_Animations.dae */; };
+		C85238981B16B3FA00C90165 /* girl2_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852388E1B16B3FA00C90165 /* girl2_Animations.dae */; };
+		C85238991B16B3FA00C90165 /* girl3_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852388F1B16B3FA00C90165 /* girl3_Animations.dae */; };
+		C852389A1B16B3FA00C90165 /* woman16_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238901B16B3FA00C90165 /* woman16_Animations.dae */; };
+		C852389B1B16B3FA00C90165 /* woman17_Animations.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238911B16B3FA00C90165 /* woman17_Animations.dae */; };
+		C85238A61B16B41600C90165 /* boy1_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852389C1B16B41600C90165 /* boy1_Model.dae */; };
+		C85238A71B16B41600C90165 /* boy2_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852389D1B16B41600C90165 /* boy2_Model.dae */; };
+		C85238A81B16B41600C90165 /* boy3_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852389E1B16B41600C90165 /* boy3_Model.dae */; };
+		C85238A91B16B41600C90165 /* boy4_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C852389F1B16B41600C90165 /* boy4_Model.dae */; };
+		C85238AA1B16B41600C90165 /* boy5_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238A01B16B41600C90165 /* boy5_Model.dae */; };
+		C85238AB1B16B41600C90165 /* girl1_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238A11B16B41600C90165 /* girl1_Model.dae */; };
+		C85238AC1B16B41600C90165 /* girl2_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238A21B16B41600C90165 /* girl2_Model.dae */; };
+		C85238AD1B16B41600C90165 /* girl3_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238A31B16B41600C90165 /* girl3_Model.dae */; };
+		C85238AE1B16B41600C90165 /* woman16_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238A41B16B41600C90165 /* woman16_Model.dae */; };
+		C85238AF1B16B41600C90165 /* woman17_Model.dae in Resources */ = {isa = PBXBuildFile; fileRef = C85238A51B16B41600C90165 /* woman17_Model.dae */; };
 		C895BF521AB2922C00AECAC2 /* park25_BK.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C895BF4C1AB2922C00AECAC2 /* park25_BK.jpg */; };
 		C895BF531AB2922C00AECAC2 /* park25_DN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C895BF4D1AB2922C00AECAC2 /* park25_DN.jpg */; };
 		C895BF541AB2922C00AECAC2 /* park25_FR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C895BF4E1AB2922C00AECAC2 /* park25_FR.jpg */; };
@@ -116,9 +133,6 @@
 		1F78E4DE19E0D50C007CE18A /* CGirl0003.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CGirl0003.tif; sourceTree = "<group>"; };
 		1F78E4DF19E0D50C007CE18A /* CWom0016.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CWom0016.tif; sourceTree = "<group>"; };
 		1F78E4E019E0D50C007CE18A /* CWom0017.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = CWom0017.tif; sourceTree = "<group>"; };
-		1F78E4FA19E0D50C007CE18A /* boy1_Character.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy1_Character.dae; sourceTree = "<group>"; };
-		1F78E4FB19E0D50C007CE18A /* boy1_Talk.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy1_Talk.dae; sourceTree = "<group>"; };
-		1F78E4FC19E0D50C007CE18A /* boy1_Talk.dae-e */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "boy1_Talk.dae-e"; sourceTree = "<group>"; };
 		1F78E4FE19E0D50C007CE18A /* boy2_Character.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy2_Character.dae; sourceTree = "<group>"; };
 		1F78E4FF19E0D50C007CE18A /* boy2_Grab.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy2_Grab.dae; sourceTree = "<group>"; };
 		1F78E50019E0D50C007CE18A /* boy2_Grab.dae-e */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "boy2_Grab.dae-e"; sourceTree = "<group>"; };
@@ -175,6 +189,26 @@
 		C83CC65D1AC6230700CD5C77 /* classroom.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = classroom.dae; sourceTree = "<group>"; };
 		C83CC6611AC623EF00CD5C77 /* registrar.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = registrar.dae; sourceTree = "<group>"; };
 		C83FBFBF1AF0963C00AC81A0 /* cellPhone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cellPhone.mp3; sourceTree = "<group>"; };
+		C85238881B16B3FA00C90165 /* boy1_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy1_Animations.dae; sourceTree = "<group>"; };
+		C85238891B16B3FA00C90165 /* boy2_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy2_Animations.dae; sourceTree = "<group>"; };
+		C852388A1B16B3FA00C90165 /* boy3_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy3_Animations.dae; sourceTree = "<group>"; };
+		C852388B1B16B3FA00C90165 /* boy4_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy4_Animations.dae; sourceTree = "<group>"; };
+		C852388C1B16B3FA00C90165 /* boy5_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy5_Animations.dae; sourceTree = "<group>"; };
+		C852388D1B16B3FA00C90165 /* girl1_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = girl1_Animations.dae; sourceTree = "<group>"; };
+		C852388E1B16B3FA00C90165 /* girl2_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = girl2_Animations.dae; sourceTree = "<group>"; };
+		C852388F1B16B3FA00C90165 /* girl3_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = girl3_Animations.dae; sourceTree = "<group>"; };
+		C85238901B16B3FA00C90165 /* woman16_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = woman16_Animations.dae; sourceTree = "<group>"; };
+		C85238911B16B3FA00C90165 /* woman17_Animations.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = woman17_Animations.dae; sourceTree = "<group>"; };
+		C852389C1B16B41600C90165 /* boy1_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy1_Model.dae; sourceTree = "<group>"; };
+		C852389D1B16B41600C90165 /* boy2_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy2_Model.dae; sourceTree = "<group>"; };
+		C852389E1B16B41600C90165 /* boy3_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy3_Model.dae; sourceTree = "<group>"; };
+		C852389F1B16B41600C90165 /* boy4_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy4_Model.dae; sourceTree = "<group>"; };
+		C85238A01B16B41600C90165 /* boy5_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = boy5_Model.dae; sourceTree = "<group>"; };
+		C85238A11B16B41600C90165 /* girl1_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = girl1_Model.dae; sourceTree = "<group>"; };
+		C85238A21B16B41600C90165 /* girl2_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = girl2_Model.dae; sourceTree = "<group>"; };
+		C85238A31B16B41600C90165 /* girl3_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = girl3_Model.dae; sourceTree = "<group>"; };
+		C85238A41B16B41600C90165 /* woman16_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = woman16_Model.dae; sourceTree = "<group>"; };
+		C85238A51B16B41600C90165 /* woman17_Model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = woman17_Model.dae; sourceTree = "<group>"; };
 		C895BF4C1AB2922C00AECAC2 /* park25_BK.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_BK.jpg; sourceTree = "<group>"; };
 		C895BF4D1AB2922C00AECAC2 /* park25_DN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_DN.jpg; sourceTree = "<group>"; };
 		C895BF4E1AB2922C00AECAC2 /* park25_FR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park25_FR.jpg; sourceTree = "<group>"; };
@@ -250,6 +284,8 @@
 		1F78E4F819E0D50C007CE18A /* Model_DAE */ = {
 			isa = PBXGroup;
 			children = (
+				C85238871B16B3DF00C90165 /* Animations */,
+				C85238861B16B3D600C90165 /* Models */,
 				C8D137AB1A9D7CAE00A13410 /* scenes */,
 				1F78E4F919E0D50C007CE18A /* boy1 */,
 				1F78E4FD19E0D50C007CE18A /* boy2 */,
@@ -263,9 +299,6 @@
 		1F78E4F919E0D50C007CE18A /* boy1 */ = {
 			isa = PBXGroup;
 			children = (
-				1F78E4FA19E0D50C007CE18A /* boy1_Character.dae */,
-				1F78E4FB19E0D50C007CE18A /* boy1_Talk.dae */,
-				1F78E4FC19E0D50C007CE18A /* boy1_Talk.dae-e */,
 			);
 			path = boy1;
 			sourceTree = "<group>";
@@ -415,6 +448,40 @@
 			path = MountainLake;
 			sourceTree = "<group>";
 		};
+		C85238861B16B3D600C90165 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C852389C1B16B41600C90165 /* boy1_Model.dae */,
+				C852389D1B16B41600C90165 /* boy2_Model.dae */,
+				C852389E1B16B41600C90165 /* boy3_Model.dae */,
+				C852389F1B16B41600C90165 /* boy4_Model.dae */,
+				C85238A01B16B41600C90165 /* boy5_Model.dae */,
+				C85238A11B16B41600C90165 /* girl1_Model.dae */,
+				C85238A21B16B41600C90165 /* girl2_Model.dae */,
+				C85238A31B16B41600C90165 /* girl3_Model.dae */,
+				C85238A41B16B41600C90165 /* woman16_Model.dae */,
+				C85238A51B16B41600C90165 /* woman17_Model.dae */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C85238871B16B3DF00C90165 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				C85238881B16B3FA00C90165 /* boy1_Animations.dae */,
+				C85238891B16B3FA00C90165 /* boy2_Animations.dae */,
+				C852388A1B16B3FA00C90165 /* boy3_Animations.dae */,
+				C852388B1B16B3FA00C90165 /* boy4_Animations.dae */,
+				C852388C1B16B3FA00C90165 /* boy5_Animations.dae */,
+				C852388D1B16B3FA00C90165 /* girl1_Animations.dae */,
+				C852388E1B16B3FA00C90165 /* girl2_Animations.dae */,
+				C852388F1B16B3FA00C90165 /* girl3_Animations.dae */,
+				C85238901B16B3FA00C90165 /* woman16_Animations.dae */,
+				C85238911B16B3FA00C90165 /* woman17_Animations.dae */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
 		C895BF4B1AB2922400AECAC2 /* Park */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,22 +599,28 @@
 				1F78E51919E0D50C007CE18A /* CBoy0002.tif in Resources */,
 				1F78E51F19E0D50C007CE18A /* CGirl0003.tif in Resources */,
 				1F78E51B19E0D50C007CE18A /* CBoy0004.tif in Resources */,
-				1F78E53819E0D50C007CE18A /* boy1_Character.dae in Resources */,
+				C85238AF1B16B41600C90165 /* woman17_Model.dae in Resources */,
 				C83CC65A1AC6220D00CD5C77 /* registrarScenario.xml in Resources */,
 				1FF9198319E5A5C600A1A6EF /* hexagon_left.tif in Resources */,
 				1FF9198519E5A5C600A1A6EF /* hexagon_top.tif in Resources */,
 				1F78E52119E0D50C007CE18A /* CWom0017.tif in Resources */,
 				C8BC473C1A9D830700229DE6 /* dorm.dae in Resources */,
+				C85238AA1B16B41600C90165 /* boy5_Model.dae in Resources */,
+				C85238AC1B16B41600C90165 /* girl2_Model.dae in Resources */,
 				1FC5A8561A7FFFF20088F8D2 /* hallwayEnvironment.xml in Resources */,
 				C83CC64E1AC614CB00CD5C77 /* library.dae in Resources */,
 				1F869F601A16EEB0004E9369 /* 1-1a.mp3 in Resources */,
 				1F78E54519E0D50C007CE18A /* woman16_Run.dae in Resources */,
 				1F78E52019E0D50C007CE18A /* CWom0016.tif in Resources */,
+				C85238951B16B3FA00C90165 /* boy4_Animations.dae in Resources */,
 				C895BF521AB2922C00AECAC2 /* park25_BK.jpg in Resources */,
+				C85238961B16B3FA00C90165 /* boy5_Animations.dae in Resources */,
 				1FF9198419E5A5C600A1A6EF /* hexagon_right.tif in Resources */,
+				C85238981B16B3FA00C90165 /* girl2_Animations.dae in Resources */,
 				1F78E53B19E0D50C007CE18A /* boy2_Character.dae in Resources */,
 				1F869F5F1A16EEB0004E9369 /* 1-1a-4.mp3 in Resources */,
 				C895BF571AB2922C00AECAC2 /* park25_UP.jpg in Resources */,
+				C85238A61B16B41600C90165 /* boy1_Model.dae in Resources */,
 				1F86E7B91977270A005ED0DD /* Main.storyboard in Resources */,
 				1F869F5E1A16EEB0004E9369 /* 1-1a-3.mp3 in Resources */,
 				C83CC6581AC6220D00CD5C77 /* classroomScenario.xml in Resources */,
@@ -555,22 +628,31 @@
 				C8D137A91A9D7BB500A13410 /* dormEnvironment.xml in Resources */,
 				C83FBFC01AF0963C00AC81A0 /* cellPhone.mp3 in Resources */,
 				1F78E51A19E0D50C007CE18A /* CBoy0003.tif in Resources */,
+				C852389A1B16B3FA00C90165 /* woman16_Animations.dae in Resources */,
+				C85238941B16B3FA00C90165 /* boy3_Animations.dae in Resources */,
 				C83CC6561AC6220D00CD5C77 /* cafeteriaScenario.xml in Resources */,
 				C83CC6591AC6220D00CD5C77 /* registrarEnvironment.xml in Resources */,
+				C85238991B16B3FA00C90165 /* girl3_Animations.dae in Resources */,
 				1F78E51D19E0D50C007CE18A /* CGirl0001.tif in Resources */,
 				1F78E53C19E0D50C007CE18A /* boy2_Grab.dae in Resources */,
 				1F78E51C19E0D50C007CE18A /* CBoy0005.tif in Resources */,
 				1F78E53E19E0D50C007CE18A /* boy3_Character.dae in Resources */,
+				C85238931B16B3FA00C90165 /* boy2_Animations.dae in Resources */,
 				1F869F5C1A16EEB0004E9369 /* 1-1a-1.mp3 in Resources */,
 				1F78E51E19E0D50C007CE18A /* CGirl0002.tif in Resources */,
 				1F78E54019E0D50C007CE18A /* boy3_Run.dae-e in Resources */,
 				1FEF9C3C1A94280E00D0E75A /* hallwayWindow.png in Resources */,
+				C85238A81B16B41600C90165 /* boy3_Model.dae in Resources */,
 				1F78E50D19E0D50C007CE18A /* ._.svn in Resources */,
 				1F78E51819E0D50C007CE18A /* CBoy0001.tif in Resources */,
 				1F8C839819F74B5600CEA215 /* action_test.xml in Resources */,
-				1F78E53A19E0D50C007CE18A /* boy1_Talk.dae-e in Resources */,
 				1F78E53D19E0D50C007CE18A /* boy2_Grab.dae-e in Resources */,
+				C85238A71B16B41600C90165 /* boy2_Model.dae in Resources */,
 				1F78E50C19E0D50C007CE18A /* ._.DS_Store in Resources */,
+				C85238AE1B16B41600C90165 /* woman16_Model.dae in Resources */,
+				C85238AB1B16B41600C90165 /* girl1_Model.dae in Resources */,
+				C852389B1B16B3FA00C90165 /* woman17_Animations.dae in Resources */,
+				C85238921B16B3FA00C90165 /* boy1_Animations.dae in Resources */,
 				C895BF531AB2922C00AECAC2 /* park25_DN.jpg in Resources */,
 				C83CC6571AC6220D00CD5C77 /* classroomEnvironment.xml in Resources */,
 				1FF9198119E5A5C600A1A6EF /* hexagon_back.tif in Resources */,
@@ -584,12 +666,14 @@
 				1FEF9C301A93050600D0E75A /* lockerwall2.png in Resources */,
 				1F78E54419E0D50C007CE18A /* woman16_Character.dae in Resources */,
 				1FEF9C361A941E8700D0E75A /* 3087.jpg in Resources */,
+				C85238971B16B3FA00C90165 /* girl1_Animations.dae in Resources */,
+				C85238AD1B16B41600C90165 /* girl3_Model.dae in Resources */,
 				C8D137AA1A9D7BB500A13410 /* dormScenario.xml in Resources */,
 				C83CC64A1AC610B600CD5C77 /* libraryScenario.xml in Resources */,
 				1FF9198219E5A5C600A1A6EF /* hexagon_front.tif in Resources */,
+				C85238A91B16B41600C90165 /* boy4_Model.dae in Resources */,
 				C895BF541AB2922C00AECAC2 /* park25_FR.jpg in Resources */,
 				C895BF561AB2922C00AECAC2 /* park25_RT.jpg in Resources */,
-				1F78E53919E0D50C007CE18A /* boy1_Talk.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
