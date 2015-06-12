@@ -70,7 +70,7 @@
                     <animation>
                         <file>boy1_Animations</file>
                         <name>sitIdle1</name>
-                        <count>100</count>
+                        <count>1000</count>
                     </animation>
                 </actionSequence>
             </target>
@@ -79,7 +79,7 @@
                     <animation>
                         <file>boy2_Animations</file>
                         <name>sitIdle1</name>
-                        <count>100</count>
+                        <count>1000</count>
                     </animation>
                 </actionSequence>
             </target>
@@ -88,7 +88,7 @@
                     <animation>
                         <file>boy3_Animations</file>
                         <name>sitIdle</name>
-                        <count>100</count>
+                        <count>1000</count>
                     </animation>
                 </actionSequence>
             </target>
@@ -97,7 +97,7 @@
                     <animation>
                         <file>woman17_Animations</file>
                         <name>idleLoop</name>
-                        <count>100</count>
+                        <count>1000</count>
                     </animation>
                 </actionSequence>
             </target>
@@ -261,7 +261,7 @@
                         <x>40</x>
                         <y>0</y>
                         <z>0</z>
-                        <duration>6</duration>
+                        <duration>4</duration>
                         <count>1</count>
                     </position>
                     <rotation>
@@ -305,7 +305,7 @@
                         <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>7</count>
+                    <count>5</count>
                 </actionSequence>
             </target>
         </actions>
@@ -522,7 +522,7 @@
                         <duration>0.4</duration>
                         <count>1</count>
                     </position>
-                    <count>12</count>
+                    <count>33</count>
                 </actionSequence>
             </target>
         </actions>
@@ -571,25 +571,17 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>30</angle>
+                        <angle>90</angle>
                         <duration>3</duration>
                         <count>1</count>
                     </rotation>
                     <position>
-                        <x>30</x>
+                        <x>-60</x>
                         <y>0</y>
-                        <z>-30</z>
+                        <z>-35</z>
                         <duration>6</duration>
                         <count>1</count>
                     </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
                 </actionSequence>
                 <actionSequence desc="bobble head">
                     <position>
@@ -606,7 +598,7 @@
                         <duration>0.4</duration>
                         <count>1</count>
                     </position>
-                    <count>12</count>
+                    <count>9</count>
                 </actionSequence>
             </target>
         </actions>
