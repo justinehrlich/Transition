@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Jeff Wirsing AViSSS XML -->
 <!--Hallway Environment -->
-<environment name="library">
+<environment name="classroom">
     
     <node name="boy2" type="dae">
-        <file>boy2_Character</file>
+        <file>boy2_Model</file>
         <objectName>CBoy0002</objectName>
         <position>
-            <x>16</x>
+            <x>-95</x>
             <y>0</y>
-            <z>-30</z>
+            <z>128.5</z>
         </position>
         <rotation>
             <x>-90</x>
@@ -17,22 +17,22 @@
             <z>0</z>
         </rotation>
         <scale>
-            <x>8</x>
-            <y>8</y>
-            <z>8</z>
+            <x>10</x>
+            <y>10</y>
+            <z>10</z>
         </scale>
     </node>
     <node name="boy1" type="dae">
-        <file>boy1_Character</file>
+        <file>boy1_Model</file>
         <objectName>CBoy0001</objectName>
         <position>
-            <x>-15</x>
+            <x>-95</x>
             <y>0</y>
-            <z>-10</z>
+            <z>117</z>
         </position>
         <rotation>
             <x>-90</x>
-            <y>90</y>
+            <y>-90</y>
             <z>0</z>
         </rotation>
         <scale>
@@ -43,16 +43,55 @@
     </node>
     
     <node name="boy3" type="dae">
-        <file>boy3_Character</file>
+        <file>boy3_Model</file>
         <objectName>CBoy0003</objectName>
         <position>
-            <x>0</x>
-            <y>0</y>
-            <z>-15</z>
+            <x>-95</x>
+            <y>1</y>
+            <z>107</z>
         </position>
         <rotation>
             <x>-90</x>
-            <y>180</y>
+            <y>-90</y>
+            <z>0</z>
+        </rotation>
+        <scale>
+            <x>10</x>
+            <y>10</y>
+            <z>13</z>
+        </scale>
+    </node>
+    <node name="boy5" type="dae">
+        <file>boy5_Model</file>
+        <objectName>CBoy0005</objectName>
+        <position>
+            <x>-118</x>
+            <y>3</y>
+            <z>107</z>
+        </position>
+        <rotation>
+            <x>-90</x>
+            <y>-90</y>
+            <z>0</z>
+        </rotation>
+        <scale>
+            <x>10</x>
+            <y>10</y>
+            <z>10</z>
+        </scale>
+    </node>
+    
+    <node name="woman17" type="dae">
+        <file>woman17_Model</file>
+        <objectName>CWom0017</objectName>
+        <position>
+            <x>-50</x>
+            <y>0</y>
+            <z>100</z>
+        </position>
+        <rotation>
+            <x>-90</x>
+            <y>90</y>
             <z>0</z>
         </rotation>
         <scale>
@@ -66,9 +105,9 @@
         <file>classroom</file>
         <objectName>classroomScene</objectName>
         <position>
-            <x>1</x>
-            <y>7.3</y>
-            <z>40</z>
+            <x>-100</x>
+            <y>0</y>
+            <z>100</z>
         </position>
         <rotation>
             <x>0</x>
@@ -76,12 +115,12 @@
             <z>0</z>
         </rotation>
         <scale>
-            <x>6</x>
-            <y>6</y>
-            <z>6</z>
+            <x>15</x>
+            <y>15</y>
+            <z>15</z>
         </scale>
     </node>
-  
+    
     
     <skybox>
         <file>park25_RT.jpg</file>

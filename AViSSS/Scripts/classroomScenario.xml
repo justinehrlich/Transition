@@ -8,17 +8,70 @@
             <target name="camera">
                 <actionSequence desc="Set Height move forward">
                     <position>
-                        <x>0</x>
+                        <x>-80</x>
                         <y>8</y>
-                        <z>60</z>
+                        <z>20</z>
                         <duration>0</duration>
                         <count>1</count>
                     </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>180</angle>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </rotation>
                     <position>
                         <x>0</x>
                         <y>0</y>
-                        <z>-60</z>
-                        <duration>8</duration>
+                        <z>110</z>
+                        <duration>11</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>2</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>-40</x>
+                        <y>7</y>
+                        <z>0</z>
+                        <duration>4</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>2</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>-17</z>
+                        <duration>1.7</duration>
+                        <count>1</count>
+                    </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>2</duration>
+                        <count>1</count>
+                    </rotation>
+                    <position>
+                        <x>0</x>
+                        <y>-7</y>
+                        <z>0</z>
+                        <duration>1</duration>
                         <count>1</count>
                     </position>
                 </actionSequence>
@@ -27,34 +80,61 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>1</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>1</duration>
                         <count>1</count>
                     </position>
-                    <count>8</count>
+                    <count>4</count>
                 </actionSequence>
             </target>
             <target name="boy1">
-                <actionSequence desc="Pos">
-                    <delay>2</delay>
-                    <position>
-                        <x>0</x>
-                        <y>0</y>
-                        <z>25</z>
-                        <duration>0</duration>
-                        <count>1</count>
-                    </position>
-                </actionSequence>
-                <actionSequence desc="talk">
+                <actionSequence desc="sitIdle1">
                     <animation>
-                        <file>boy1_Talk</file>
-                        <count>100</count>
+                        <file>boy1_Animations</file>
+                        <name>sitIdle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy2">
+                <actionSequence desc="sitIdle1">
+                    <animation>
+                        <file>boy2_Animations</file>
+                        <name>sitIdle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy3">
+                <actionSequence desc="sitIdle">
+                    <animation>
+                        <file>boy3_Animations</file>
+                        <name>sitIdle</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy5">
+                <actionSequence desc="sitIdle">
+                    <animation>
+                        <file>boy5_Animations</file>
+                        <name>sitIdleLoop</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="woman17">
+                <actionSequence desc="idleLoop">
+                    <animation>
+                        <file>woman17_Animations</file>
+                        <name>idleLoop</name>
+                        <count>1000</count>
                     </animation>
                 </actionSequence>
             </target>
@@ -62,33 +142,33 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>You see your roommate as you enter your dorm. What should you do?</situation_text>
+            <situation_text>As you enter the classroom, you realize that you forgot your homework. What should you do?</situation_text>
             <next_state>1</next_state>
-            <correct_choice>3</correct_choice>
+            <correct_choice>1</correct_choice>
             <option_type>text</option_type>
             <description_delay>8</description_delay>
             <options_delay>8</options_delay>
             
             <menu_option id="0">
-                <text>Scowl at him</text>
-                <text_on_select>No, you should never just scowl at your roommate.</text_on_select>
+                <text>Run back and get the homework, even though you will be late.</text>
+                <text_on_select>No, you should never be late to class as it's not only disrespectful to the professor and your classmates, you may miss something important. And either way, the professor may not allow you to turn in the assignment after class starts.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Tell him to leave, you want time to yourself.</text>
-                <text_on_select>No, your roommate has the same right to be here as you do. </text_on_select>
+                <text>After class explain what happened to the professor.</text>
+                <text_on_select>Yes, it's always best to communicate with your professors. Sometimes professors will allow you to turn in assignments late, but either way, she will know why you failed to submit your assignment on time.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Ignore him and keep going on my way</text>
-                <text_on_select>No, you should acknowledge your roomate when you see him or her.</text_on_select>
+                <text>Don't worry about it, you'll be sure to turn in the next homework on time.</text>
+                <text_on_select>No, the professor may still allow you to turn in the assignment late.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Tell him "hi!"</text>
-                <text_on_select>Good job! You should attempt to be friendly to your roomate. </text_on_select>
+                <text>Demand that the professor accept the homework assignment late.</text>
+                <text_on_select>No, you should always be respectful to your professors. You're the one that made the mistake and the professor is in charge of this course, including the late homework policy.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -103,75 +183,52 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
+                        <angle>10</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                    <position>
-                        <x>30</x>
-                        <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
-                        <count>1</count>
-                    </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
+                        <angle>-10</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                </actionSequence>
-                <actionSequence desc="bobble head">
-                    <position>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <position>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <count>12</count>
+                    <count>5</count>
                 </actionSequence>
             </target>
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>You notice that your roommate left a mess on your side of the dorm. How should you respond?</situation_text>
-            <next_state>0</next_state>
-            <correct_choice>2</correct_choice>
+            <situation_text>Usually the professor provides handouts that outline her lecture, but today she said the outline is only available online. What should you do?</situation_text>
+            <next_state>2</next_state>
+            <correct_choice>1</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
             
             <menu_option id="0">
-                <text>I'll move the mess to his side.</text>
-                <text_on_select>No, you shouldn't touch your roommates property unless you have permission.</text_on_select>
+                <text>Demand that the professor give you the outline, otherwise she is being unfair.</text>
+                <text_on_select>No, it's the professor's class and she does not need to provide you with outlines or notes. You must learn to deal changes that occur during class.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Scream and yell</text>
-                <text_on_select>This is not a good idea. This will create a hostile environment.</text_on_select>
+                <text>Take notes today, but from now on print out the slides before coming to class.</text>
+                <text_on_select>Yes, you still need notes from the lecture to study later. The professor is not obligated to provide you with handouts, so from now on you should print out the outlines before class. </text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Politely ask your roommate to move the mess.</text>
-                <text_on_select>Yes, this is a good idea. You should politely contront your roommate if there is a problem.</text_on_select>
+                <text>Leave the class to print out the outline.</text>
+                <text_on_select>No, leaving the class is not only disrespectful to both the professor and your classmates, but you may miss something important. You can take notes without relying on an outline.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
                 <text>Ignore the problem.</text>
-                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <text_on_select>No, you still need notes from the lecture so that you can study the content later.You can take notes without relying on an outline.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -186,79 +243,55 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
+                        <angle>10</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                    <position>
-                        <x>30</x>
-                        <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
-                        <count>1</count>
-                    </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
+                        <angle>-10</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                </actionSequence>
-                <actionSequence desc="bobble head">
-                    <position>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <position>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <count>12</count>
+                    <count>5</count>
                 </actionSequence>
             </target>
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>Your roommate is playing music, which is disturbing you. How should you respond?</situation_text>
-            <next_state>0</next_state>
-            <correct_choice>1</correct_choice>
+            <situation_text>You're having trouble understanding some of the content and try to ask questions about it, but you start realizing that the students around you are getting annoyed, and the professor is starting to ignore you.</situation_text>
+            <next_state>3</next_state>
+            <correct_choice>0</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
             
             <menu_option id="0">
-                <text>I'll turn the music off without his permission.</text>
-                <text_on_select>No, it's your roommates stereo and you shouldn't touch it.</text_on_select>
+                <text>I'll stop asking so many questions and will talk to the professor during her office hours after I've reviewed the materials.</text>
+                <text_on_select>Yes, while not understanding the lecture is frustrating, asking too many questions disrupts the lecture and the ability for others to learn. Note that asking a few questions is certainly acceptable and even encouraged, asking more than ten is too much.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Talk to your roommate about creating a schedule that will allow for both quiet time and time when music and television is allowed.</text>
-                <text_on_select>Yes, this is a good solution. When living with somebody else, sometimes you must both make compromises in order to create a good living environment.</text_on_select>
+                <text>You have a right to ask questions, so keep doing it until you understand everything completely.</text>
+                <text_on_select>This is not a good idea because asking too many questions disrupts the lecture and the ability for others to learn. </text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Don't say anything even though you feel that you never get your quiet time.</text>
-                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <text>Stop asking questions completely.</text>
+                <text_on_select>No, you should still ask questions, just in moderation. If you read the material before class you may have a few specific questions, but overall you should have some understanding of the material before coming to class.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>To retaliate you start playing your own music loudly.</text>
-                <text_on_select>No, this is not a good solution and will only cause conflict between the two of you.</text_on_select>
+                <text>Leave the classroom, nobody wants you here.</text>
+                <text_on_select>No, the professor and everyone else want you to participate in the course. You must find a way to participate without distracting others from learning.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
-            
         </gui>
     </state>
     <state id="3">
@@ -269,75 +302,52 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
+                        <angle>10</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                    <position>
-                        <x>30</x>
-                        <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
-                        <count>1</count>
-                    </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
+                        <angle>-10</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                </actionSequence>
-                <actionSequence desc="bobble head">
-                    <position>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <position>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <count>12</count>
+                    <count>5</count>
                 </actionSequence>
             </target>
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>Your roommate has decided to have his girlfriend over again, which is the third time this week. The dorm is small and it feels crowded and uncomfortable when she's over', so what should you do?</situation_text>
+            <situation_text>The professor has just told the details about our final project. One of the requirements is to present the project to the class, but you are terrified at public speaking. What should you do?</situation_text>
             <next_state>0</next_state>
-            <correct_choice>1</correct_choice>
+            <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
             
             <menu_option id="0">
-                <text>I'll ask her to leave when she arrives.</text>
-                <text_on_select>No, this is very rude and will just cause a conflict between you and your roommate.</text_on_select>
+                <text>I'll do the project, but won't present it to the class.</text>
+                <text_on_select>No, for you are required to give a presentation and your grade depends on it. While public speaking may be scary, it's an important skill to have and most careers require it. Giving presentations in class is a very good way of practicing public speaking. The more you practice, the less scary it becomes.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Don't say anything even though you feel that you never relax in your own room.</text>
-                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <text>I will try and drop the course.</text>
+                <text_on_select>No, just because you are scared is not a good reason for dropping a course. While public speaking may be scary, it's an important skill to have and most careers require it. Giving presentations in class is a very good way of practicing public speaking. The more you practice, the less scary it becomes.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Leave the room.</text>
-                <text_on_select>If this keeps happening this is not the best solution. You should be able to spend time in your own room.</text_on_select>
+                <text>I'll just plan on reading a few lines and ending it as quick as possible.</text>
+                <text_on_select>No, you should always do your best. Reading a few lines will likely not fulfill the requirements, and besides you will miss out on an opportunity to practice your public speaking skills. While public speaking may be scary, it's an important skill to have and most careers require it.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Talk to your roommate about creating a schedule of when each of you is allowed to have visitors.</text>
-                <text_on_select>Yes, this is a good solution. When living with somebody else, sometimes you must both make compromises in order to create a good living environment. You may want to allow flexibilty in case something comes up, but just once in a while.</text_on_select>
+                <text>I'll practice the presentation at home, but if I'm still worried about it I'll talk with the professor.</text>
+                <text_on_select>This is probably the best solution, as it will prepare you to give your final project presentation. If after you practice you still feel overwelmed, talk to your professor. She might be able to give you tips or even offer an alternative assignment if a disability prevents you from publicly speaking.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>

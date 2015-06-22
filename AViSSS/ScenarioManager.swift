@@ -56,7 +56,7 @@ class ScenarioManager: UIViewController {
         
         //Will get scenario name from first scene/GUIManager
         //var scenarioName = "testScenario"
-        var scenarioName = "libraryScenario"
+        var scenarioName = "classroomScenario"
         //var scenarioName = "cafeteriaScenario"
         //var scenarioName = "classroomScenario"
         //var scenarioName = "registrarScenario"
