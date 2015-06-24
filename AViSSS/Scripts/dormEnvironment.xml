@@ -23,16 +23,16 @@
         </scale>
     </node>
     <node name="boy1" type="dae">
-        <file>boy1_Character</file>
+        <file>boy1_Model</file>
         <objectName>CBoy0001</objectName>
         <position>
-            <x>-15</x>
-            <y>0</y>
+            <x>-25</x>
+            <y>3</y>
             <z>-10</z>
         </position>
         <rotation>
             <x>-90</x>
-            <y>90</y>
+            <y>270</y>
             <z>0</z>
         </rotation>
         <scale>
