@@ -10,17 +10,25 @@
                     <position>
                         <x>0</x>
                         <y>8</y>
-                        <z>60</z>
+                        <z>40</z>
                         <duration>0</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>0</y>
-                        <z>-60</z>
-                        <duration>8</duration>
+                        <z>-40</z>
+                        <duration>4</duration>
                         <count>1</count>
                     </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-30</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
                 </actionSequence>
                 <actionSequence desc="bobble head">
                     <position>
@@ -41,16 +49,22 @@
                 </actionSequence>
             </target>
             <target name="boy1">
-
-                
-                    <actionSequence desc="sitIdle1">
-                        <animation>
-                            <file>boy1_Animations</file>
-                            <name>sitIdle1</name>
-                            <count>1000</count>
-                        </animation>
-                    </actionSequence>
-                
+                <actionSequence desc="sitIdle1">
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>sitIdle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl1">
+                <actionSequence desc="walkLoop">
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
             </target>
         </actions>
         <gui>
@@ -60,8 +74,8 @@
             <next_state>1</next_state>
             <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>8</description_delay>
-            <options_delay>8</options_delay>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
             
             <menu_option id="0">
                 <text>Scowl at him</text>
@@ -82,7 +96,7 @@
             </menu_option>
             <menu_option id="3">
                 <text>Tell him "hi!"</text>
-                <text_on_select>Good job! You should attempt to be friendly to your roomate. </text_on_select>
+                <text_on_select>Good job! You should attempt to be friendly to your roommate. </text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -98,21 +112,21 @@
                         <y>1</y>
                         <z>0</z>
                         <angle>30</angle>
-                        <duration>3</duration>
+                        <duration>1</duration>
                         <count>1</count>
                     </rotation>
                     <position>
                         <x>30</x>
                         <y>0</y>
                         <z>-30</z>
-                        <duration>6</duration>
+                        <duration>3</duration>
                         <count>1</count>
                     </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
+                        <angle>-90</angle>
                         <duration>3</duration>
                         <count>1</count>
                     </rotation>
@@ -122,17 +136,17 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>12</count>
+                    <count>4</count>
                 </actionSequence>
             </target>
         </actions>
@@ -140,11 +154,11 @@
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
             <situation_text>You notice that your roommate left a mess on your side of the dorm. How should you respond?</situation_text>
-            <next_state>0</next_state>
+            <next_state>2</next_state>
             <correct_choice>2</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
             
             <menu_option id="0">
                 <text>I'll move the mess to his side.</text>
@@ -175,47 +189,24 @@
     <state id="2">
         <actions>
             <target name="camera">
-                <actionSequence desc="turn move forward">
+                <actionSequence desc="shake head">
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
+                        <angle>15</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                    <position>
-                        <x>30</x>
-                        <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
-                        <count>1</count>
-                    </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
+                        <angle>-15</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                </actionSequence>
-                <actionSequence desc="bobble head">
-                    <position>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <position>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <count>12</count>
+                    <count>5</count>
                 </actionSequence>
             </target>
         </actions>
@@ -223,11 +214,11 @@
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
             <situation_text>Your roommate is playing music, which is disturbing you. How should you respond?</situation_text>
-            <next_state>0</next_state>
+            <next_state>3</next_state>
             <correct_choice>1</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>4</description_delay>
+            <options_delay>4</options_delay>
             
             <menu_option id="0">
                 <text>I'll turn the music off without his permission.</text>
@@ -247,7 +238,7 @@
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>To retaliate you start playing your own music loudly.</text>
+                <text>You start playing your own music loudly to retaliate.</text>
                 <text_on_select>No, this is not a good solution and will only cause conflict between the two of you.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
@@ -257,48 +248,52 @@
     </state>
     <state id="3">
         <actions>
-            <target name="camera">
+            <target name="girl1">
                 <actionSequence desc="turn move forward">
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
+                        <angle>-15</angle>
+                        <duration>0</duration>
                         <count>1</count>
                     </rotation>
-                    <position>
-                        <x>30</x>
+                   <position>
+                        <x>-50</x>
                         <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
+                        <z>-90</z>
+                        <duration>16</duration>
                         <count>1</count>
                     </position>
+                </actionSequence>
+                <actionSequence desc="turn move forward">
+                    <delay>16</delay>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="camera">
+                <actionSequence desc="shake head">
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
+                        <angle>15</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                </actionSequence>
-                <actionSequence desc="bobble head">
-                    <position>
+                    <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <angle>-15</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
-                    </position>
-                    <position>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <count>12</count>
+                    </rotation>
+                    <count>5</count>
                 </actionSequence>
             </target>
         </actions>
@@ -306,11 +301,11 @@
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
             <situation_text>Your roommate has decided to have his girlfriend over again, which is the third time this week. The dorm is small and it feels crowded and uncomfortable when she's over', so what should you do?</situation_text>
-            <next_state>0</next_state>
+            <next_state>4</next_state>
             <correct_choice>1</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>5</description_delay>
+            <options_delay>5</options_delay>
             
             <menu_option id="0">
                 <text>I'll ask her to leave when she arrives.</text>
@@ -341,47 +336,24 @@
     <state id="4">
         <actions>
             <target name="camera">
-                <actionSequence desc="turn move forward">
+                <actionSequence desc="shake head">
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
+                        <angle>15</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                    <position>
-                        <x>30</x>
-                        <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
-                        <count>1</count>
-                    </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
+                        <angle>-15</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                </actionSequence>
-                <actionSequence desc="bobble head">
-                    <position>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <position>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <count>12</count>
+                    <count>5</count>
                 </actionSequence>
             </target>
         </actions>
