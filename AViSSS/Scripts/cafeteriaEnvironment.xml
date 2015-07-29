@@ -98,7 +98,25 @@
             <z>10</z>
         </scale>
     </node>
-    
+    <node name="boy1b" type="dae">
+        <file>boy1_Model</file>
+        <objectName>CBoy0001</objectName>
+        <position>
+            <x>65</x>
+            <y>0</y>
+            <z>1081</z>
+        </position>
+        <rotation>
+            <x>-90</x>
+            <y>0</y>
+            <z>0</z>
+        </rotation>
+        <scale>
+            <x>10</x>
+            <y>10</y>
+            <z>10</z>
+        </scale>
+    </node>
     <node name="boy3" type="dae">
         <file>boy3_Model</file>
         <objectName>CBoy0003</objectName>
@@ -123,13 +141,32 @@
         <file>woman17_Model</file>
         <objectName>CWom0017</objectName>
         <position>
-            <x>-60</x>
+            <x>120</x>
             <y>0</y>
-            <z>20</z>
+            <z>82</z>
         </position>
         <rotation>
             <x>-90</x>
-            <y>180</y>
+            <y>90</y>
+            <z>0</z>
+        </rotation>
+        <scale>
+            <x>13</x>
+            <y>13</y>
+            <z>13</z>
+        </scale>
+    </node>
+    <node name="woman17b" type="dae">
+        <file>woman17_Model</file>
+        <objectName>CWom0017</objectName>
+        <position>
+            <x>25</x>
+            <y>0</y>
+            <z>27</z>
+        </position>
+        <rotation>
+            <x>-90</x>
+            <y>270</y>
             <z>0</z>
         </rotation>
         <scale>

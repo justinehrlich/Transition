@@ -65,6 +65,42 @@
                     <count>7</count>
                 </actionSequence>
             </target>
+            <target name="girl1">
+                <actionSequence desc="idle1">
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy1b">
+                <actionSequence desc="idle1">
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl2">
+                <actionSequence desc="idle1">
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>idle2</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl3">
+                <actionSequence desc="idle1">
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>idle3</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
             <target name="boy1">
                 <actionSequence desc="sitIdle1">
                     <animation>
@@ -101,13 +137,22 @@
                     </animation>
                 </actionSequence>
             </target>
+            <target name="woman17b">
+                <actionSequence desc="idleLoop">
+                    <animation>
+                        <file>woman17_Animations</file>
+                        <name>idleLoop</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
             <situation_text>As you walk into the cafeteria for lunch, you notice your usual seat has been taken. What should you do?</situation_text>
             <next_state>1</next_state>
-            <correct_choice>3</correct_choice>
+            <correct_choice>2</correct_choice>
             <option_type>text</option_type>
             <description_delay>8</description_delay>
             <options_delay>8</options_delay>
@@ -124,17 +169,18 @@
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Stand next to him until he leaves.</text>
-                <text_on_select>No, this would make him feel uncormfortable, and besides you need to eat!</text_on_select>
+                <text>Find a different seat once you have gotten your food.</text>
+                <text_on_select>Good job! The other person was there first so it's his seat. Your usual seat will be occupied many times during the semester, so you must be flexibile to choose another seat. </text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Find a different seat once you have gotten your food.</text>
-                <text_on_select>Good job! The other person was there first so it's his seat. Your usual seat will be occupied many times during the semester, so you must be flexibile to choose another seat. </text_on_select>
+                <text>Stand next to him until he leaves.</text>
+                <text_on_select>No, this would make him feel uncormfortable, and besides you need to eat!</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
+            
             
         </gui>
     </state>
@@ -172,7 +218,7 @@
                         <duration>13</duration>
                         <count>1</count>
                     </position>
-
+                    
                     <sound>cellPhone.mp3</sound>
                 </actionSequence>
                 
@@ -194,37 +240,38 @@
                     <count>17</count>
                 </actionSequence>
             </target>
+
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>As you're trying to study, somebody close to you starts talking on his cell phone. What should you do?'</situation_text>
+            <situation_text>The line you're standing in is taking way too long because the person in front of you is asking the server lots of questions. What should you do?</situation_text>
             <next_state>2</next_state>
             <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>8</description_delay>
+            <options_delay>8</options_delay>
             
             <menu_option id="0">
-                <text>I'll ask the person to hang up the phone.</text>
-                <text_on_select>No, even if phones are not allowed, this is rude and will cause a conflict.</text_on_select>
+                <text>I'll ask the person to hurry up.</text>
+                <text_on_select>No, this is rude and will cause a conflict.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Ignore the issue even it prevents you from studying.</text>
-                <text_on_select>This is not a good idea as you may not get your homework finished.</text_on_select>
+                <text>Leave to go get snacks at the vending machine.</text>
+                <text_on_select>This is not a good idea as vending machine food is typically not very healthy.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Ask a librarian to intercede.</text>
-                <text_on_select>While this might be a good idea if there is a policy in the library against cell phones, a lot of libraries do not actually have rules against cell phones.</text_on_select>
+                <text>Cut in front of the person asking all the questions.</text>
+                <text_on_select>No, this is rude and will cause a conflict.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Move to a different area.</text>
-                <text_on_select>This is probably the best solution, as it's quick and won't cause conflict.</text_on_select>
+                <text>Ignore the problem and wait patiently.</text>
+                <text_on_select>This is probably the best solution, you need to learn to have patience while waiting in lines.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -235,44 +282,11 @@
         <actions>
             <target name="camera">
                 <actionSequence desc="turn move forward">
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>90</angle>
-                        <duration>1</duration>
-                        <count>1</count>
-                    </rotation>
-                    <position>
-                        <x>40</x>
+                <position>
+                        <x>5</x>
                         <y>0</y>
                         <z>0</z>
-                        <duration>4</duration>
-                        <count>1</count>
-                    </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>-90</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
-                </actionSequence>
-                <actionSequence desc="smooth up and down">
-                    <position>
-                        <x>0</x>
-                        <y>5</y>
-                        <z>0</z>
-                        <duration>1</duration>
-                        <count>1</count>
-                    </position>
-                    <delay>6</delay>
-                    <position>
-                        <x>0</x>
-                        <y>-5</y>
-                        <z>0</z>
-                        <duration>1</duration>
+                        <duration>2</duration>
                         <count>1</count>
                     </position>
                 </actionSequence>
@@ -291,40 +305,144 @@
                         <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>5</count>
+                    <count>2</count>
                 </actionSequence>
             </target>
+            <target name="girl1">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl2">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl3">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy1b">
+                <actionSequence desc="move forward">
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>-950</z>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>-50</z>
+                        <duration>7</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+                <actionSequence desc="turn">
+                    <delay>6</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                </actionSequence>
+
+            </target>
+
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>When you sit down to study, you start feeling overwhelmed with all of the work you need to do, and don't know where to start.</situation_text>
+            <situation_text>While you are standing in line, the person in front of you cuts. What should you do?</situation_text>
             <next_state>3</next_state>
-            <correct_choice>3</correct_choice>
+            <correct_choice>1</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>8</description_delay>
+            <options_delay>8</options_delay>
             
             <menu_option id="0">
-                <text>I'll walk around the library until I can decide what to do.</text>
-                <text_on_select>No, a plan needs to be made now, don't get distracted by walking around.</text_on_select>
+                <text>I'll walk around the person and cut him.</text>
+                <text_on_select>No, this will only cause a conflict, which is not what you need.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Ask the librarian what to do.</text>
-                <text_on_select>While the librarian can help you find material once you start your homework, you should be able to create a plan on your own.</text_on_select>
+                <text>Ignore the person.</text>
+                <text_on_select>Yes, you should probably let this go, besides he might of cut not knowing you were in line,  or it's possible that the person in front of him saved a spot.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Leave the library and go back to your dorm.</text>
-                <text_on_select>This is not the best solution. You need to study for your classes.</text_on_select>
+                <text>Scream and yell.</text>
+                <text_on_select>No, this will only cause a conflict and you will embarras yourself.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Create a plan with a list of all of your assignments.</text>
-                <text_on_select>Yes, this is a great idea. It always helps to get organized and will give you directions of what to do next. It may help to create a flowchart with your assignments that are due next listed first. Another idea is to use a timer to keep track of when you should finish studying.</text_on_select>
+                <text>Tell the person to get behind you.</text>
+                <text_on_select>While this might be acceptable, it might cause a conflict. This cost you so little time it's probably not worth worrying about.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -335,42 +453,28 @@
         <actions>
             <target name="camera">
                 <actionSequence desc="turn move forward">
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
                     <position>
-                        <x>0</x>
-                        <y>5</y>
-                        <z>0</z>
-                        <duration>1</duration>
-                        <count>1</count>
-                    </position>
-                    <position>
-                        <x>43</x>
+                        <x>10</x>
                         <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
-                        <count>1</count>
+                        <z>0</z>
+                        <duration>2</duration>
+                        <count>2</count>
                     </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>150</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
+                    <delay>2</delay>
                     <position>
-                        <x>0</x>
-                        <y>-4</y>
+                        <x>10</x>
+                        <y>0</y>
                         <z>0</z>
-                        <duration>1</duration>
-                        <count>1</count>
+                        <duration>2</duration>
+                        <count>2</count>
+                    </position>
+                    <delay>2</delay>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>2</duration>
+                        <count>2</count>
                     </position>
                 </actionSequence>
                 <actionSequence desc="bobble head">
@@ -378,50 +482,330 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>12</count>
+                    <count>10</count>
+                </actionSequence>
+            </target>
+            <target name="girl1">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>1000</z>
+                        <duration>100</duration>
+                        <count>1</count>
+                    </position>
+
+                </actionSequence>
+            </target>
+            <target name="girl2">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>1000</z>
+                        <duration>100</duration>
+                        <count>1</count>
+                    </position>
+
+                </actionSequence>
+            </target>
+            <target name="girl3">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>1000</z>
+                        <duration>100</duration>
+                        <count>1</count>
+                    </position>
+
+                </actionSequence>
+            </target>
+            <target name="boy1b">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>5</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>1000</z>
+                        <duration>100</duration>
+                        <count>1</count>
+                    </position>
+
                 </actionSequence>
             </target>
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>One of your homework assignments requires you to research and summarize an online academic paper. What should you do?</situation_text>
+            <situation_text>As you're waiting in line you realize that you forgot your student ID. What should you do?</situation_text>
             <next_state>4</next_state>
-            <correct_choice>3</correct_choice>
+            <correct_choice>0</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>3</description_delay>
+            <options_delay>3</options_delay>
             
             <menu_option id="0">
-                <text>Make up the report without finding any information on the topic.</text>
-                <text_on_select>No, this is a bad idea. Not only will you not be learning about the topic, but you'll likely receive a poor grade for not completing the assignment correctly.</text_on_select>
+                <text>Ask the server what to do.</text>
+                <text_on_select>Yes, she might have a solution and either way it doesn't hurt to ask.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Try and find a classmate to help you with the assignment.</text>
-                <text_on_select>You have to be very careful when working with a friend for assignments that are to be completed individually. While you may certainly discuss strategies for completing the assignment, the actual work must be done independently. </text_on_select>
+                <text>Leave to go back to the dorm to find it.</text>
+                <text_on_select>No, you don't have time to go all the way back to the dorm before your next class.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Search for the topic on a computer in the library even though you're not sure how to.</text>
-                <text_on_select>Unless you've had experience with searching for academic papers, you should ask the librarian for help because it requires special access and tools.</text_on_select>
+                <text>Take the food and just hope the cashier will know what to do.</text>
+                <text_on_select>No, you should make sure you have a solution before taking the food. Once you take the food, it can't be given to anybody else, so if the cashier doesn't have a solution then the food will be thrown out.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Ask the librarian for help.</text>
-                <text_on_select>Yes, this is a good solution. Typically university libraries subscribe to paid academic databases that need to be logged into to use. The librarian can show you how to access and use these databases.</text_on_select>
+                <text>Skip lunch today.</text>
+                <text_on_select>Only do this if you've checked that there is nothing else you can do. You should eat all three meals everyday to stay healthy and smart.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -432,116 +816,56 @@
         <actions>
             <target name="camera">
                 <actionSequence desc="turn move forward">
-                    <position>
-                        <x>0</x>
-                        <y>4</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>90</angle>
-                        <duration>2</duration>
+                        <angle>45</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                    <position>
-                        <x>-17</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <duration>2</duration>
-                        <count>1</count>
-                    </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>90</angle>
-                        <duration>2</duration>
+                        <angle>-45</angle>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </rotation>
-                    <position>
-                        <x>0</x>
-                        <y>0</y>
-                        <z>-155</z>
-                        <duration>10</duration>
-                        <count>1</count>
-                    </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>90</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
-                    <position>
-                        <x>40</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>90</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
-                </actionSequence>
-                <actionSequence desc="bobble head">
-                    <position>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <position>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <count>33</count>
+                    <count>5</count>
                 </actionSequence>
             </target>
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>Part of your assignment asks you to locate a book on the shelf. When you try to find it you discover that it is not where it should be. What do you do?</situation_text>
-            <next_state>5</next_state>
-            <correct_choice>1</correct_choice>
+            <situation_text>The server says that there is nothing you can do. You do have one dollar in your pocket. How should you respond?</situation_text>
+            <next_state>0</next_state>
+            <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>2</description_delay>
+            <options_delay>2</options_delay>
             
             <menu_option id="0">
-                <text>Skip this part of the assignment.</text>
+                <text>Skip lunch and go to class.</text>
                 <text_on_select>No, this is a bad idea. Not only will you receive a lower grade, but you will not be learning what was intended.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Ask the librarian for help.</text>
-                <text_on_select>Yes, this is a good solution. It could very well be located behind the front desk if the book was checked out or put on reserve.</text_on_select>
+                <text>Ask another person in line for some money.</text>
+                <text_on_select>No, you shouldn't hassle people for money unless you are desperate.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Try and find a classmate to help you with the assignment.</text>
-                <text_on_select>You have to be very careful when working with a friend for assignments that are to be completed individually. While you may certainly discuss strategies for completing the assignment, the actual work must be done independently. </text_on_select>
+                <text>Argue with the server - this is not fair.</text>
+                <text_on_select>No, this is a policy of the cafeteria and is not the server's choice. It's not her or the cafeteria's fault that you forgot your ID.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Just take a book in the same area.</text>
-                <text_on_select>No, while it may be similar it probably won't contain the needed information. Besides, you need to follow the instructions precisely in order to fulfill the goal of the assignment.</text_on_select>
+                <text>Stop by the vending machine on the way to class.</text>
+                <text_on_select>Yes, but make sure you find the most healthy item. You need nutrients in order to be alert for class.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -549,79 +873,5 @@
             
         </gui>
     </state>
-    <state id="5">
-        <actions>
-            <target name="camera">
-                <actionSequence desc="turn move forward">
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>90</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
-                    <position>
-                        <x>-60</x>
-                        <y>0</y>
-                        <z>-35</z>
-                        <duration>6</duration>
-                        <count>1</count>
-                    </position>
-                </actionSequence>
-                <actionSequence desc="bobble head">
-                    <position>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <position>
-                        <x>0</x>
-                        <y>-1</y>
-                        <z>0</z>
-                        <duration>0.4</duration>
-                        <count>1</count>
-                    </position>
-                    <count>9</count>
-                </actionSequence>
-            </target>
-        </actions>
-        <gui>
-            <ambient_sound></ambient_sound>
-            <situation_sound>1-1a</situation_sound>
-            <situation_text>The librarian finds that the book has been placed on reserve. This means that it's only available to use within the library. The problem is you forgot your ID, so she won't let your borrow it. What should you do?</situation_text>
-            <next_state>0</next_state>
-            <correct_choice>3</correct_choice>
-            <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
-            
-            <menu_option id="0">
-                <text>Make up the report without finding any information on the topic.</text>
-                <text_on_select>No, this is a bad idea. Not only will you not be learning about the topic, but you'll likely receive a poor grade for not completing the assignment correctly.</text_on_select>
-                <sound_on_select>1-1a-1</sound_on_select>
-            </menu_option>
-            <menu_option id="1">
-                <text>Try and find a classmate to help you with the assignment.</text>
-                <text_on_select>You have to be very careful when working with a friend for assignments that are to be completed individually. While you may certainly discuss strategies for completing the assignment, the actual work must be done independently. </text_on_select>
-                <sound_on_select>1-1a-2</sound_on_select>
-                <actions></actions>
-            </menu_option>
-            <menu_option id="2">
-                <text>Argue with the librarian.</text>
-                <text_on_select>No, this is not a good idea. This policy is of the University and it's important that it be followed.</text_on_select>
-                <sound_on_select>1-1a-3</sound_on_select>
-                <actions></actions>
-            </menu_option>
-            <menu_option id="3">
-                <text>Go home and get your ID.</text>
-                <text_on_select>Yes, this is a good solution. While it's annoying that the librarian won't let you see the book without an ID, they must keep track of where the book is located so that way the rest of the class has time to read it.</text_on_select>
-                <sound_on_select>1-1a-4</sound_on_select>
-                <actions></actions>
-            </menu_option>
-            
-        </gui>
-    </state>
+   
 </scenario>
