@@ -8,53 +8,141 @@
             <target name="camera">
                 <actionSequence desc="Set Height move forward">
                     <position>
-                        <x>0</x>
+                        <x>-95</x>
                         <y>8</y>
-                        <z>60</z>
+                        <z>0</z>
                         <duration>0</duration>
                         <count>1</count>
                     </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </rotation>
+                    <delay>10</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
                     <position>
                         <x>0</x>
                         <y>0</y>
-                        <z>-60</z>
+                        <z>80</z>
                         <duration>8</duration>
                         <count>1</count>
                     </position>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-90</angle>
+                        <duration>3</duration>
+                        <count>1</count>
+                    </rotation>
                 </actionSequence>
                 <actionSequence desc="bobble head">
                     <position>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>1</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>1</duration>
                         <count>1</count>
                     </position>
-                    <count>8</count>
+                    <count>7</count>
+                </actionSequence>
+            </target>
+            <target name="girl1">
+                <actionSequence desc="idle1">
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy1b">
+                <actionSequence desc="idle1">
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl2">
+                <actionSequence desc="idle1">
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>idle2</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl3">
+                <actionSequence desc="idle1">
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>idle3</name>
+                        <count>1000</count>
+                    </animation>
                 </actionSequence>
             </target>
             <target name="boy1">
-                <actionSequence desc="Pos">
-                    <delay>2</delay>
-                    <position>
-                        <x>0</x>
-                        <y>0</y>
-                        <z>25</z>
-                        <duration>0</duration>
-                        <count>1</count>
-                    </position>
-                </actionSequence>
-                <actionSequence desc="talk">
+                <actionSequence desc="sitIdle1">
                     <animation>
-                        <file>boy1_Talk</file>
-                        <count>100</count>
+                        <file>boy1_Animations</file>
+                        <name>sitIdle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy2">
+                <actionSequence desc="sitIdle1">
+                    <animation>
+                        <file>boy2_Animations</file>
+                        <name>sitIdle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy3">
+                <actionSequence desc="sitIdle">
+                    <animation>
+                        <file>boy3_Animations</file>
+                        <name>sitIdle</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="woman17">
+                <actionSequence desc="idleLoop">
+                    <animation>
+                        <file>woman17_Animations</file>
+                        <name>idleLoop</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="woman17b">
+                <actionSequence desc="idleLoop">
+                    <animation>
+                        <file>woman17_Animations</file>
+                        <name>idleLoop</name>
+                        <count>1000</count>
                     </animation>
                 </actionSequence>
             </target>
@@ -62,36 +150,37 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>You see your roommate as you enter your dorm. What should you do?</situation_text>
+            <situation_text>As you walk into the cafeteria for lunch, you notice your usual seat has been taken. What should you do?</situation_text>
             <next_state>1</next_state>
-            <correct_choice>3</correct_choice>
+            <correct_choice>2</correct_choice>
             <option_type>text</option_type>
             <description_delay>8</description_delay>
             <options_delay>8</options_delay>
             
             <menu_option id="0">
-                <text>Scowl at him</text>
-                <text_on_select>No, you should never just scowl at your roommate.</text_on_select>
+                <text>Talk to a staff member about having him moved.</text>
+                <text_on_select>No, even though you usually sit here, it's not your seat. The other person was there first so it's his seat. Your usual seat will be occupied many times, so you must be flexibile to choose another seat.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Tell him to leave, you want time to yourself.</text>
-                <text_on_select>No, your roommate has the same right to be here as you do. </text_on_select>
+                <text>Tell him to leave, it's your seat.</text>
+                <text_on_select>No, even though you usually sit here, it's not your seat. The other person was there first so it's his seat. Your usual seat will be occupied many times, so you must be flexibile to choose another seat. </text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Ignore him and keep going on my way</text>
-                <text_on_select>No, you should acknowledge your roomate when you see him or her.</text_on_select>
+                <text>Find a different seat once you have gotten your food.</text>
+                <text_on_select>Good job! The other person was there first so it's his seat. Your usual seat will be occupied many times during the semester, so you must be flexibile to choose another seat. </text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Tell him "hi!"</text>
-                <text_on_select>Good job! You should attempt to be friendly to your roomate. </text_on_select>
+                <text>Stand next to him until he leaves.</text>
+                <text_on_select>No, this would make him feel uncormfortable, and besides you need to eat!</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
+            
             
         </gui>
     </state>
@@ -103,75 +192,86 @@
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
+                        <angle>-90</angle>
+                        <duration>1</duration>
                         <count>1</count>
                     </rotation>
                     <position>
-                        <x>30</x>
+                        <x>0</x>
                         <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
+                        <z>-20</z>
+                        <duration>2</duration>
                         <count>1</count>
                     </position>
                     <rotation>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
+                        <angle>90</angle>
+                        <duration>1</duration>
                         <count>1</count>
                     </rotation>
+                    <position>
+                        <x>130</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>13</duration>
+                        <count>1</count>
+                    </position>
+                    
+                    <sound>cellPhone.mp3</sound>
                 </actionSequence>
+                
                 <actionSequence desc="bobble head">
                     <position>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>12</count>
+                    <count>17</count>
                 </actionSequence>
             </target>
+            
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>You notice that your roommate left a mess on your side of the dorm. How should you respond?</situation_text>
-            <next_state>0</next_state>
-            <correct_choice>2</correct_choice>
+            <situation_text>The line you're standing in is taking way too long because the person in front of you is asking the server lots of questions. What should you do?</situation_text>
+            <next_state>2</next_state>
+            <correct_choice>3</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>8</description_delay>
+            <options_delay>8</options_delay>
             
             <menu_option id="0">
-                <text>I'll move the mess to his side.</text>
-                <text_on_select>No, you shouldn't touch your roommates property unless you have permission.</text_on_select>
+                <text>I'll ask the person to hurry up.</text>
+                <text_on_select>No, this is rude and will cause a conflict.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Scream and yell</text>
-                <text_on_select>This is not a good idea. This will create a hostile environment.</text_on_select>
+                <text>Leave to go get snacks at the vending machine.</text>
+                <text_on_select>This is not a good idea as vending machine food is typically not very healthy.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Politely ask your roommate to move the mess.</text>
-                <text_on_select>Yes, this is a good idea. You should politely contront your roommate if there is a problem.</text_on_select>
+                <text>Cut in front of the person asking all the questions.</text>
+                <text_on_select>No, this is rude and will cause a conflict.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Ignore the problem.</text>
-                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <text>Ignore the problem and wait patiently.</text>
+                <text_on_select>This is probably the best solution, you need to learn to have patience while waiting in lines.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -182,79 +282,167 @@
         <actions>
             <target name="camera">
                 <actionSequence desc="turn move forward">
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
                     <position>
-                        <x>30</x>
+                        <x>5</x>
                         <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
+                        <z>0</z>
+                        <duration>2</duration>
                         <count>1</count>
                     </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
                 </actionSequence>
                 <actionSequence desc="bobble head">
                     <position>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>12</count>
+                    <count>2</count>
                 </actionSequence>
             </target>
+            <target name="girl1">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl2">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl3">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy1b">
+                <actionSequence desc="move forward">
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>-950</z>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>-50</z>
+                        <duration>7</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+                <actionSequence desc="turn">
+                    <delay>6</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                </actionSequence>
+                
+            </target>
+            
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>Your roommate is playing music, which is disturbing you. How should you respond?</situation_text>
-            <next_state>0</next_state>
+            <situation_text>While you are standing in line, the person in front of you cuts. What should you do?</situation_text>
+            <next_state>3</next_state>
             <correct_choice>1</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>8</description_delay>
+            <options_delay>8</options_delay>
             
             <menu_option id="0">
-                <text>I'll turn the music off without his permission.</text>
-                <text_on_select>No, it's your roommates stereo and you shouldn't touch it.</text_on_select>
+                <text>I'll walk around the person and cut him.</text>
+                <text_on_select>No, this will only cause a conflict, which is not what you need.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Talk to your roommate about creating a schedule that will allow for both quiet time and time when music and television is allowed.</text>
-                <text_on_select>Yes, this is a good solution. When living with somebody else, sometimes you must both make compromises in order to create a good living environment.</text_on_select>
+                <text>Ignore the person.</text>
+                <text_on_select>Yes, you should probably let this go, besides he might of cut not knowing you were in line,  or it's possible that the person in front of him saved a spot.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Don't say anything even though you feel that you never get your quiet time.</text>
-                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <text>Scream and yell.</text>
+                <text_on_select>No, this will only cause a conflict and you will embarras yourself.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>To retaliate you start playing your own music loudly.</text>
-                <text_on_select>No, this is not a good solution and will only cause conflict between the two of you.</text_on_select>
+                <text>Tell the person to get behind you.</text>
+                <text_on_select>While this might be acceptable, it might cause a conflict. This cost you so little time it's probably not worth worrying about.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
@@ -265,83 +453,425 @@
         <actions>
             <target name="camera">
                 <actionSequence desc="turn move forward">
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>30</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
                     <position>
-                        <x>30</x>
+                        <x>10</x>
                         <y>0</y>
-                        <z>-30</z>
-                        <duration>6</duration>
-                        <count>1</count>
-                    </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
                         <z>0</z>
-                        <angle>-30</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
+                        <duration>2</duration>
+                        <count>2</count>
+                    </position>
+                    <delay>2</delay>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>2</duration>
+                        <count>2</count>
+                    </position>
+                    <delay>2</delay>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>2</duration>
+                        <count>2</count>
+                    </position>
                 </actionSequence>
                 <actionSequence desc="bobble head">
                     <position>
                         <x>0</x>
                         <y>1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
                     <position>
                         <x>0</x>
                         <y>-1</y>
                         <z>0</z>
-                        <duration>0.4</duration>
+                        <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>12</count>
+                    <count>10</count>
+                </actionSequence>
+            </target>
+            <target name="girl1">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>1000</z>
+                        <duration>100</duration>
+                        <count>1</count>
+                    </position>
+                    
+                </actionSequence>
+            </target>
+            <target name="girl2">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>1000</z>
+                        <duration>100</duration>
+                        <count>1</count>
+                    </position>
+                    
+                </actionSequence>
+            </target>
+            <target name="girl3">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>1000</z>
+                        <duration>100</duration>
+                        <count>1</count>
+                    </position>
+                    
+                </actionSequence>
+            </target>
+            <target name="boy1b">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>5</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                    <delay>2</delay>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </rotation>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>0</x>
+                        <y>0</y>
+                        <z>1000</z>
+                        <duration>100</duration>
+                        <count>1</count>
+                    </position>
+                    
                 </actionSequence>
             </target>
         </actions>
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>Your roommate has decided to have his girlfriend over again, which is the third time this week. The dorm is small and it feels crowded and uncomfortable when she's over', so what should you do?</situation_text>
-            <next_state>0</next_state>
-            <correct_choice>1</correct_choice>
+            <situation_text>As you're waiting in line you realize that you forgot your student ID. What should you do?</situation_text>
+            <next_state>4</next_state>
+            <correct_choice>0</correct_choice>
             <option_type>text</option_type>
-            <description_delay>12</description_delay>
-            <options_delay>12</options_delay>
+            <description_delay>3</description_delay>
+            <options_delay>3</options_delay>
             
             <menu_option id="0">
-                <text>I'll ask her to leave when she arrives.</text>
-                <text_on_select>No, this is very rude and will just cause a conflict between you and your roommate.</text_on_select>
+                <text>Ask the server what to do.</text>
+                <text_on_select>Yes, she might have a solution and either way it doesn't hurt to ask.</text_on_select>
                 <sound_on_select>1-1a-1</sound_on_select>
             </menu_option>
             <menu_option id="1">
-                <text>Don't say anything even though you feel that you never relax in your own room.</text>
-                <text_on_select>This is not the best solution. By internalizing the issue, you may begin to resent your roommate.</text_on_select>
+                <text>Leave to go back to the dorm to find it.</text>
+                <text_on_select>No, you don't have time to go all the way back to the dorm before your next class.</text_on_select>
                 <sound_on_select>1-1a-2</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="2">
-                <text>Leave the room.</text>
-                <text_on_select>If this keeps happening this is not the best solution. You should be able to spend time in your own room.</text_on_select>
+                <text>Take the food and just hope the cashier will know what to do.</text>
+                <text_on_select>No, you should make sure you have a solution before taking the food. Once you take the food, it can't be given to anybody else, so if the cashier doesn't have a solution then the food will be thrown out.</text_on_select>
                 <sound_on_select>1-1a-3</sound_on_select>
                 <actions></actions>
             </menu_option>
             <menu_option id="3">
-                <text>Talk to your roommate about creating a schedule of when each of you is allowed to have visitors.</text>
-                <text_on_select>Yes, this is a good solution. When living with somebody else, sometimes you must both make compromises in order to create a good living environment. You may want to allow flexibilty in case something comes up, but just once in a while.</text_on_select>
+                <text>Skip lunch today.</text>
+                <text_on_select>Only do this if you've checked that there is nothing else you can do. You should eat all three meals everyday to stay healthy and smart.</text_on_select>
                 <sound_on_select>1-1a-4</sound_on_select>
                 <actions></actions>
             </menu_option>
             
         </gui>
     </state>
+    <state id="4">
+        <actions>
+            <target name="camera">
+                <actionSequence desc="turn move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>45</angle>
+                        <duration>0.5</duration>
+                        <count>1</count>
+                    </rotation>
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>-45</angle>
+                        <duration>0.5</duration>
+                        <count>1</count>
+                    </rotation>
+                    <count>5</count>
+                </actionSequence>
+            </target>
+        </actions>
+        <gui>
+            <ambient_sound></ambient_sound>
+            <situation_sound>1-1a</situation_sound>
+            <situation_text>The server says that there is nothing you can do. You do have one dollar in your pocket. How should you respond?</situation_text>
+            <next_state>0</next_state>
+            <correct_choice>3</correct_choice>
+            <option_type>text</option_type>
+            <description_delay>2</description_delay>
+            <options_delay>2</options_delay>
+            
+            <menu_option id="0">
+                <text>Skip lunch and go to class.</text>
+                <text_on_select>No, this is a bad idea. Not only will you receive a lower grade, but you will not be learning what was intended.</text_on_select>
+                <sound_on_select>1-1a-1</sound_on_select>
+            </menu_option>
+            <menu_option id="1">
+                <text>Ask another person in line for some money.</text>
+                <text_on_select>No, you shouldn't hassle people for money unless you are desperate.</text_on_select>
+                <sound_on_select>1-1a-4</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="2">
+                <text>Argue with the server - this is not fair.</text>
+                <text_on_select>No, this is a policy of the cafeteria and is not the server's choice. It's not her or the cafeteria's fault that you forgot your ID.</text_on_select>
+                <sound_on_select>1-1a-2</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            <menu_option id="3">
+                <text>Stop by the vending machine on the way to class.</text>
+                <text_on_select>Yes, but make sure you find the most healthy item. You need nutrients in order to be alert for class.</text_on_select>
+                <sound_on_select>1-1a-3</sound_on_select>
+                <actions></actions>
+            </menu_option>
+            
+            
+        </gui>
+    </state>
+    
 </scenario>
