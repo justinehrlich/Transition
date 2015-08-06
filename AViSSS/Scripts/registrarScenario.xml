@@ -7,45 +7,30 @@
         <actions>
             <target name="camera">
                 <actionSequence desc="Set Height move forward">
+                    <rotation>
+                        <x>0</x>
+                        <y>1</y>
+                        <z>0</z>
+                        <angle>90</angle>
+                        <duration>0</duration>
+                        <count>1</count>
+                    </rotation>
                     <position>
-                        <x>-95</x>
+                        <x>0</x>
                         <y>8</y>
-                        <z>0</z>
+                        <z>60</z>
                         <duration>0</duration>
                         <count>1</count>
                     </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>90</angle>
-                        <duration>0</duration>
-                        <count>1</count>
-                    </rotation>
-                    <delay>10</delay>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>90</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
+                    <delay>4</delay>
+
                     <position>
-                        <x>0</x>
+                        <x>45</x>
                         <y>0</y>
-                        <z>80</z>
-                        <duration>8</duration>
+                        <z>0</z>
+                        <duration>4.5</duration>
                         <count>1</count>
                     </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>-90</angle>
-                        <duration>3</duration>
-                        <count>1</count>
-                    </rotation>
                 </actionSequence>
                 <actionSequence desc="bobble head">
                     <position>
@@ -62,7 +47,7 @@
                         <duration>1</duration>
                         <count>1</count>
                     </position>
-                    <count>7</count>
+                    <count>5</count>
                 </actionSequence>
             </target>
             <target name="girl1">
@@ -150,7 +135,7 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>As you walk into the cafeteria for lunch, you notice your usual seat has been taken. What should you do?</situation_text>
+            <situation_text>As you enter the registrar's office to enroll for this semester's courses, you notice that the line is long and it's taking forever. What should you do?</situation_text>
             <next_state>1</next_state>
             <correct_choice>2</correct_choice>
             <option_type>text</option_type>
@@ -188,40 +173,14 @@
         <actions>
             <target name="camera">
                 <actionSequence desc="turn move forward">
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>-90</angle>
-                        <duration>1</duration>
-                        <count>1</count>
-                    </rotation>
                     <position>
-                        <x>0</x>
+                        <x>5</x>
                         <y>0</y>
-                        <z>-20</z>
+                        <z>0</z>
                         <duration>2</duration>
                         <count>1</count>
                     </position>
-                    <rotation>
-                        <x>0</x>
-                        <y>1</y>
-                        <z>0</z>
-                        <angle>90</angle>
-                        <duration>1</duration>
-                        <count>1</count>
-                    </rotation>
-                    <position>
-                        <x>130</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <duration>13</duration>
-                        <count>1</count>
-                    </position>
-                    
-                    <sound>cellPhone.mp3</sound>
                 </actionSequence>
-                
                 <actionSequence desc="bobble head">
                     <position>
                         <x>0</x>
@@ -237,7 +196,91 @@
                         <duration>0.5</duration>
                         <count>1</count>
                     </position>
-                    <count>17</count>
+                    <count>2</count>
+                </actionSequence>
+            </target>
+            <target name="girl1">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>walkLoop</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl2">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl2_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="girl3">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>girl3_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
+                </actionSequence>
+            </target>
+            <target name="boy1b">
+                <actionSequence desc="move forward">
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>walkCycle</name>
+                        <count>1000</count>
+                    </animation>
+                    <position>
+                        <x>10</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <duration>1</duration>
+                        <count>1</count>
+                    </position>
+                    <animation>
+                        <file>boy1_Animations</file>
+                        <name>idle1</name>
+                        <count>1000</count>
+                    </animation>
                 </actionSequence>
             </target>
             
@@ -245,7 +288,7 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>The line you're standing in is taking way too long because the person in front of you is asking the server lots of questions. What should you do?</situation_text>
+            <situation_text>People are talking and making too much noise in the line, what should you do?</situation_text>
             <next_state>2</next_state>
             <correct_choice>3</correct_choice>
             <option_type>text</option_type>
@@ -416,7 +459,7 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>While you are standing in line, the person in front of you cuts. What should you do?</situation_text>
+            <situation_text>It's finally your turn. You give the assistant all of the forms that you have, but '</situation_text>
             <next_state>3</next_state>
             <correct_choice>1</correct_choice>
             <option_type>text</option_type>
@@ -779,7 +822,7 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>As you're waiting in line you realize that you forgot your student ID. What should you do?</situation_text>
+            <situation_text>The assistant enters everything in the computer but then notices that one of the classes you selected is already full. What should you do?</situation_text>
             <next_state>4</next_state>
             <correct_choice>0</correct_choice>
             <option_type>text</option_type>
@@ -839,7 +882,7 @@
         <gui>
             <ambient_sound></ambient_sound>
             <situation_sound>1-1a</situation_sound>
-            <situation_text>The server says that there is nothing you can do. You do have one dollar in your pocket. How should you respond?</situation_text>
+            <situation_text>You are really confused by the schedule. What should you do?</situation_text>
             <next_state>0</next_state>
             <correct_choice>3</correct_choice>
             <option_type>text</option_type>

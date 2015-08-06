@@ -2,7 +2,26 @@
 <!--Jeff Wirsing AViSSS XML -->
 <!--Hallway Environment -->
 <environment name="cafeteria">
-    
+    <node name="boy1b" type="dae">
+        <file>boy1_Model</file>
+        <objectName>CBoy0001</objectName>
+        <position>
+            <x>55</x>
+            <y>0</y>
+            <z>81</z>
+        </position>
+        <rotation>
+            <x>-90</x>
+            <y>-90</y>
+            <z>0</z>
+        </rotation>
+        <scale>
+            <x>10</x>
+            <y>10</y>
+            <z>13</z>
+        </scale>
+    </node>
+
     <node name="girl1" type="dae">
         <file>girl1_Model</file>
         <objectName>CGirl0001</objectName>
@@ -19,7 +38,7 @@
         <scale>
             <x>10</x>
             <y>10</y>
-            <z>10</z>
+            <z>13</z>
         </scale>
     </node>
     <node name="girl2" type="dae">
@@ -38,7 +57,7 @@
         <scale>
             <x>10</x>
             <y>10</y>
-            <z>10</z>
+            <z>13</z>
         </scale>
     </node>
     <node name="girl3" type="dae">
@@ -57,7 +76,7 @@
         <scale>
             <x>10</x>
             <y>10</y>
-            <z>10</z>
+            <z>13</z>
         </scale>
     </node>
     <node name="boy2" type="dae">
@@ -98,26 +117,7 @@
             <z>10</z>
         </scale>
     </node>
-    <node name="boy1b" type="dae">
-        <file>boy1_Model</file>
-        <objectName>CBoy0001</objectName>
-        <position>
-            <x>65</x>
-            <y>0</y>
-            <z>1081</z>
-        </position>
-        <rotation>
-            <x>-90</x>
-            <y>0</y>
-            <z>0</z>
-        </rotation>
-        <scale>
-            <x>10</x>
-            <y>10</y>
-            <z>10</z>
-        </scale>
-    </node>
-    <node name="boy3" type="dae">
+       <node name="boy3" type="dae">
         <file>boy3_Model</file>
         <objectName>CBoy0003</objectName>
         <position>
@@ -176,17 +176,17 @@
         </scale>
     </node>
     
-    <node name="cafeteria" type="dae">
+    <node name="registrar" type="dae">
         <file>registrar</file>
         <objectName>registrarScene</objectName>
         <position>
-            <x>-10</x>
+            <x>-50</x>
             <y>7.3</y>
-            <z>160</z>
+            <z>120</z>
         </position>
         <rotation>
             <x>0</x>
-            <y>-90</y>
+            <y>180</y>
             <z>0</z>
         </rotation>
         <scale>
